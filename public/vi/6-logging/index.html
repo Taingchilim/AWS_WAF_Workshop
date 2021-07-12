@@ -9,24 +9,24 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>6-loggings :: AWS Web Application Firewall</title>
+    <title>Logging :: AWS Web Application Firewall</title>
 
     
-    <link href="/css/nucleus.css?1612762268" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1612762268" rel="stylesheet">
-    <link href="/css/hybrid.css?1612762268" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1612762268" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1612762268" rel="stylesheet">
-    <link href="/css/auto-complete.css?1612762268" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1612762268" rel="stylesheet">
-    <link href="/css/theme.css?1612762268" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1612762268" rel="stylesheet">
+    <link href="/css/nucleus.css?1626076638" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1626076638" rel="stylesheet">
+    <link href="/css/hybrid.css?1626076638" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1626076638" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1626076638" rel="stylesheet">
+    <link href="/css/auto-complete.css?1626076638" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1626076638" rel="stylesheet">
+    <link href="/css/theme.css?1626076638" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1626076638" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1612762268" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1626076638" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1612762268"></script>
+    <script src="/js/jquery-3.3.1.min.js?1626076638"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1612762268"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1612762268"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1626076638"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1626076638"></script>
 <script type="text/javascript">
     
         var baseurl = "\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1612762268"></script>
+<script type="text/javascript" src="/js/search.js?1626076638"></script>
 
     
   </div>
@@ -372,39 +372,13 @@
  
   
     
-    <li data-nav-id="/vi/7-clean-up/" title="Thu hồi tài nguyên" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/vi/7-clean-up/">
-          <b>7. </b>Thu hồi tài nguyên
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-          
-          
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/vi/6-logging/" title="6-loggings" class="dd-item 
+    <li data-nav-id="/vi/6-logging/" title="Logging" class="dd-item 
         
         active
         
         ">
       <a href="/vi/6-logging/">
-          6-loggings
+          <b>6. </b>Logging
           
             <i class="fas fa-check read-icon"></i>
           
@@ -450,6 +424,32 @@
           
         
         </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/7-clean-up/" title="Thu hồi tài nguyên" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/vi/7-clean-up/">
+          <b>7. </b>Thu hồi tài nguyên
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
               
     </li>
   
@@ -537,11 +537,11 @@
     <section id="footer">
       <left>
     
-    
-
-    
-
-    
+     <b> Workshop</b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7837680&style=0038&nbdigits=9&type=page&initCount=0" title="Migrate" Alt="web counter"   border="0" /></a>  <br>
+     <b> <a href="https://cloudjourney.awsstudygroup.com/">Cloud Journey</a></b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7830807&style=0038&nbdigits=9&type=page&initCount=0" title="Total CLoud Journey" Alt="web counter"   border="0"   />
+     
 </left>
 
 <script async defer src="https://buttons.github.io/buttons.js"></script>
@@ -580,7 +580,7 @@
             
           
           
-            <a href='/vi/'>AWS Web Application Firewall</a> > 6-loggings
+            <a href='/vi/'>AWS Web Application Firewall</a> > Logging
           
         
           
@@ -591,7 +591,15 @@
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -607,7 +615,7 @@
           
             <h1>
               
-              6-loggings
+              Logging
             </h1>
           
 
@@ -615,7 +623,76 @@
 
 
 
-	
+	<p>WAF Uses <a href="https://aws.amazon.com/kinesis/data-firehose/">Amazon Kinesis Firehose</a> to ingest logs. This allows logs to be passed to any Kinesis Firehose destination, such as Amazon S3, Amazon Redshift or Amazon Elastic Search. To enable logging of requests in your Web ACL, you must first create a Kinesis Data Firehose.</p>
+<p><strong>Content</strong></p>
+<ul>
+<li><a href="#waf-log-example">WAF Log Example</a></li>
+<li><a href="#analysing-and-visualising-logs">Analysing and Visualising Logs</a></li>
+</ul>
+<h4 id="waf-log-example">WAF Log Example</h4>
+<p>Here is an example WAF log of a request. Note that you receive details on the rule that terminated the evaluation of the request. The log also contains the action taking on that request</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+  <span style="color:#f92672">&#34;timestamp&#34;</span>: <span style="color:#ae81ff">1576280412771</span>,
+  <span style="color:#f92672">&#34;formatVersion&#34;</span>: <span style="color:#ae81ff">1</span>,
+  <span style="color:#f92672">&#34;webaclId&#34;</span>: <span style="color:#e6db74">&#34;arn:aws:wafv2:ap-southeast-2:EXAMPLE12345:regional/webacl/STMTest/1EXAMPLE-2ARN-3ARN-4ARN-123456EXAMPLE&#34;</span>,
+  <span style="color:#f92672">&#34;terminatingRuleId&#34;</span>: <span style="color:#e6db74">&#34;STMTest_SQLi_XSS&#34;</span>,
+  <span style="color:#f92672">&#34;terminatingRuleType&#34;</span>: <span style="color:#e6db74">&#34;REGULAR&#34;</span>,
+  <span style="color:#f92672">&#34;action&#34;</span>: <span style="color:#e6db74">&#34;BLOCK&#34;</span>,
+  <span style="color:#f92672">&#34;terminatingRuleMatchDetails&#34;</span>: [
+    {
+      <span style="color:#f92672">&#34;conditionType&#34;</span>: <span style="color:#e6db74">&#34;SQL_INJECTION&#34;</span>,
+      <span style="color:#f92672">&#34;location&#34;</span>: <span style="color:#e6db74">&#34;HEADER&#34;</span>,
+      <span style="color:#f92672">&#34;matchedData&#34;</span>: [<span style="color:#e6db74">&#34;10&#34;</span>, <span style="color:#e6db74">&#34;AND&#34;</span>, <span style="color:#e6db74">&#34;1&#34;</span>]
+    }
+  ],
+  <span style="color:#f92672">&#34;httpSourceName&#34;</span>: <span style="color:#e6db74">&#34;-&#34;</span>,
+  <span style="color:#f92672">&#34;httpSourceId&#34;</span>: <span style="color:#e6db74">&#34;-&#34;</span>,
+  <span style="color:#f92672">&#34;ruleGroupList&#34;</span>: [],
+  <span style="color:#f92672">&#34;rateBasedRuleList&#34;</span>: [],
+  <span style="color:#f92672">&#34;nonTerminatingMatchingRules&#34;</span>: [],
+  <span style="color:#f92672">&#34;httpRequest&#34;</span>: {
+    <span style="color:#f92672">&#34;clientIp&#34;</span>: <span style="color:#e6db74">&#34;1.1.1.1&#34;</span>,
+    <span style="color:#f92672">&#34;country&#34;</span>: <span style="color:#e6db74">&#34;AU&#34;</span>,
+    <span style="color:#f92672">&#34;headers&#34;</span>: [
+      {
+        <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Host&#34;</span>,
+        <span style="color:#f92672">&#34;value&#34;</span>: <span style="color:#e6db74">&#34;localhost:1989&#34;</span>
+      },
+      {
+        <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;User-Agent&#34;</span>,
+        <span style="color:#f92672">&#34;value&#34;</span>: <span style="color:#e6db74">&#34;curl/7.61.1&#34;</span>
+      },
+      {
+        <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Accept&#34;</span>,
+        <span style="color:#f92672">&#34;value&#34;</span>: <span style="color:#e6db74">&#34;*/*&#34;</span>
+      },
+      {
+        <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;x-stm-test&#34;</span>,
+        <span style="color:#f92672">&#34;value&#34;</span>: <span style="color:#e6db74">&#34;10 AND 1=1&#34;</span>
+      }
+    ],
+    <span style="color:#f92672">&#34;uri&#34;</span>: <span style="color:#e6db74">&#34;/foo&#34;</span>,
+    <span style="color:#f92672">&#34;args&#34;</span>: <span style="color:#e6db74">&#34;&#34;</span>,
+    <span style="color:#f92672">&#34;httpVersion&#34;</span>: <span style="color:#e6db74">&#34;HTTP/1.1&#34;</span>,
+    <span style="color:#f92672">&#34;httpMethod&#34;</span>: <span style="color:#e6db74">&#34;GET&#34;</span>,
+    <span style="color:#f92672">&#34;requestId&#34;</span>: <span style="color:#e6db74">&#34;rid&#34;</span>
+  }
+}
+
+</code></pre></div><h4 id="analysing-and-visualising-logs">Analysing and Visualising Logs</h4>
+<p>Log analysis is key to ensure the effectiveness of WAF Rules, in addition to troubleshooting of individual issues. Logs exported to <a href="https://aws.amazon.com/elasticsearch-service/">Amazon Elastic Search Service</a> can be queried. <a href="https://aws.amazon.com/elasticsearch-service/the-elk-stack/kibana/">Kibana</a> can be used alongside Amazon Elastic Search to visualise the WAF logs <a href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_SelectObjectContent.html">S3 Select</a> can be used to perform SQL queries against individual WAF Log files in S3. Queries can be performed in the console, or using the AWS CLI or SDKs.</p>
+<p>For example, the following S3 Select query counts how many requests in the log file were blocked.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span>
+<span style="color:#66d9ef">FROM</span> S3Object s
+<span style="color:#66d9ef">WHERE</span>  s.<span style="color:#e6db74">&#34;action&#34;</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;BLOCK&#39;</span>
+
+<span style="color:#75715e">/*
+</span><span style="color:#75715e">Result:
+</span><span style="color:#75715e">{
+</span><span style="color:#75715e">    &#34;count&#34;: 18
+</span><span style="color:#75715e">}
+</span><span style="color:#75715e">*/</span>
+</code></pre></div>
 
 
 
@@ -810,22 +887,6 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
                     
                 
                 
@@ -855,6 +916,22 @@
                     
             
         
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
                     
             
         
@@ -868,7 +945,7 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/vi/7-clean-up/" title="Thu hồi tài nguyên"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/vi/5-testing/1-challenges/" title="Thử thách"> <i class="fa fa-chevron-left"></i></a>
 		
 		
 			<a class="nav nav-next" href="/vi/6-logging/1-challenges/" title="Cấu hình Log" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
@@ -881,19 +958,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1612762268"></script>
-    <script src="/js/perfect-scrollbar.min.js?1612762268"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1612762268"></script>
-    <script src="/js/jquery.sticky.js?1612762268"></script>
-    <script src="/js/featherlight.min.js?1612762268"></script>
-    <script src="/js/highlight.pack.js?1612762268"></script>
+    <script src="/js/clipboard.min.js?1626076638"></script>
+    <script src="/js/perfect-scrollbar.min.js?1626076638"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1626076638"></script>
+    <script src="/js/jquery.sticky.js?1626076638"></script>
+    <script src="/js/featherlight.min.js?1626076638"></script>
+    <script src="/js/highlight.pack.js?1626076638"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1612762268"></script>
-    <script src="/js/learn.js?1612762268"></script>
-    <script src="/js/hugo-learn.js?1612762268"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1626076638"></script>
+    <script src="/js/learn.js?1626076638"></script>
+    <script src="/js/hugo-learn.js?1626076638"></script>
 
-    <link href="/mermaid/mermaid.css?1612762268" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1612762268"></script>
+    <link href="/mermaid/mermaid.css?1626076638" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1626076638"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
