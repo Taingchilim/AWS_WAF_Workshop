@@ -10,7 +10,7 @@ chapter = false
 
 In this lab, you’ll learn the basic and practice of **AWS Web Application Firewall**.
 
-{{< figure src="/images/waficon.png" title="AWS WAF" width=140pc >}}
+{{< figure src="/images/waficon.png" title="AWS WAF" width=150pc >}}
 
 #### Content:
 

@@ -10,7 +10,7 @@ chapter = false
 
 Trong bài lab này, bạn sẽ tìm hiểu khái niệm và thực hành về **AWS Web Application Firewall**.
 
-{{< figure src="/images/waficon.png" title="AWS WAF" width=140pc >}}
+{{< figure src="/images/waficon.png" title="AWS WAF" width=150pc >}}
 
 #### Nội dung:
 
