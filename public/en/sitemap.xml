@@ -1,40 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-  <url>
-    <loc>/3-custom-rules/1-challenges/</loc>
-    <lastmod>1970-01-01T07:33:40+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/3-custom-rules/1-challenges/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/3-custom-rules/1-challenges/"
-                />
-  </url>
-  
-  <url>
-    <loc>/4-advanced-rules/1-challenges/</loc>
-    <lastmod>1970-01-01T07:33:40+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/4-advanced-rules/1-challenges/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/4-advanced-rules/1-challenges/"
-                />
-  </url>
-  
   <url>
     <loc>/</loc>
-    <lastmod>1970-01-01T07:33:40+07:00</lastmod>
+    <lastmod>1970-01-01T07:33:41+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
@@ -45,159 +14,150 @@
                 hreflang="en"
                 href="/"
                 />
-  </url>
-  
-  <url>
-    <loc>/5-testing/1-challenges/</loc>
+  </url><url>
+    <loc>/2-prepare/2.1-creates3/</loc>
     <lastmod>1970-01-01T07:33:40+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/5-testing/1-challenges/"
+                href="/vi/2-prepare/2.1-creates3/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/5-testing/1-challenges/"
+                href="/2-prepare/2.1-creates3/"
                 />
-  </url>
-  
-  <url>
-    <loc>/6-logging/1-challenges/</loc>
+  </url><url>
+    <loc>/1-introduction/</loc>
     <lastmod>1970-01-01T07:33:40+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/6-logging/1-challenges/"
+                href="/vi/1-introduction/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/6-logging/1-challenges/"
+                href="/1-introduction/"
                 />
-  </url>
-  
-  <url>
-    <loc>/1-prerequiste/</loc>
+  </url><url>
+    <loc>/3-useawswaf/3.1-createswebacl/</loc>
     <lastmod>1970-01-01T07:33:40+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/1-prerequiste/"
+                href="/vi/3-useawswaf/3.1-createswebacl/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/1-prerequiste/"
+                href="/3-useawswaf/3.1-createswebacl/"
                 />
-  </url>
-  
-  <url>
-    <loc>/2-acls-managed-rules/1-challenges/</loc>
+  </url><url>
+    <loc>/3-useawswaf/3.2-createcustomrule/</loc>
     <lastmod>1970-01-01T07:33:40+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/2-acls-managed-rules/1-challenges/"
+                href="/vi/3-useawswaf/3.2-createcustomrule/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/2-acls-managed-rules/1-challenges/"
+                href="/3-useawswaf/3.2-createcustomrule/"
                 />
-  </url>
-  
-  <url>
-    <loc>/2-acls-managed-rules/</loc>
+  </url><url>
+    <loc>/2-prepare/2.2-deploythesamplewebapp/</loc>
     <lastmod>1970-01-01T07:33:40+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/2-acls-managed-rules/"
+                href="/vi/2-prepare/2.2-deploythesamplewebapp/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/2-acls-managed-rules/"
+                href="/2-prepare/2.2-deploythesamplewebapp/"
                 />
-  </url>
-  
-  <url>
-    <loc>/3-custom-rules/</loc>
+  </url><url>
+    <loc>/2-prepare/</loc>
     <lastmod>1970-01-01T07:33:40+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/3-custom-rules/"
+                href="/vi/2-prepare/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/3-custom-rules/"
+                href="/2-prepare/"
                 />
-  </url>
-  
-  <url>
-    <loc>/4-advanced-rules/</loc>
+  </url><url>
+    <loc>/3-useawswaf/3.3-createadvancecustomrule/</loc>
     <lastmod>1970-01-01T07:33:40+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/4-advanced-rules/"
+                href="/vi/3-useawswaf/3.3-createadvancecustomrule/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/4-advanced-rules/"
+                href="/3-useawswaf/3.3-createadvancecustomrule/"
                 />
-  </url>
-  
-  <url>
-    <loc>/5-testing/</loc>
+  </url><url>
+    <loc>/3-useawswaf/</loc>
     <lastmod>1970-01-01T07:33:40+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/5-testing/"
+                href="/vi/3-useawswaf/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/5-testing/"
+                href="/3-useawswaf/"
                 />
-  </url>
-  
-  <url>
-    <loc>/6-logging/</loc>
+  </url><url>
+    <loc>/4-cleanup/</loc>
     <lastmod>1970-01-01T07:33:40+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/6-logging/"
+                href="/vi/4-cleanup/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/6-logging/"
+                href="/4-cleanup/"
                 />
-  </url>
-  
-  <url>
-    <loc>/7-clean-up/</loc>
+  </url><url>
+    <loc>/3-useawswaf/3.4-testingnewrule/</loc>
     <lastmod>1970-01-01T07:33:40+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/7-clean-up/"
+                href="/vi/3-useawswaf/3.4-testingnewrule/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/7-clean-up/"
+                href="/3-useawswaf/3.4-testingnewrule/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>/3-useawswaf/3.5-logging/</loc>
+    <lastmod>1970-01-01T07:33:40+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/3-useawswaf/3.5-logging/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/3-useawswaf/3.5-logging/"
+                />
+  </url><url>
     <loc>/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -209,9 +169,7 @@
                 hreflang="en"
                 href="/categories/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/</loc>
     <xhtml:link
                 rel="alternate"
@@ -224,5 +182,4 @@
                 href="/tags/"
                 />
   </url>
-  
 </urlset>

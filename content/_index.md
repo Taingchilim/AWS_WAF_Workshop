@@ -1,24 +1,20 @@
 +++
 title = "AWS Web Application Firewall"
-date = 2020
+date = 2021
 weight = 1
 chapter = false
 +++
+# AWS Web Application Firewall
 
-# What is AWS WAF?
+#### Overview
 
-AWS WAF is a web application firewall service. It helps protect your web applications or APIs against common web exploits that may affect availability, compromise security, or consume excessive resources.
+In this lab, you’ll learn the basic and practice of **AWS Web Application Firewall**.
 
-Using a WAF is a great way to add defense in depth to your web application. A WAF can help mitigate the risk of vulnerabilities such as [SQL Injection](https://www.owasp.org/index.php/SQL_Injection), [Cross Site Scripting](https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)) and other common attacks (which listed in Top 10 OWASP). WAF allows you to create your own custom rules to decide whether to block or allow HTTP requests before they reach your application.
+{{< figure src="/images/waficon.png" title="AWS WAF" width=140pc >}}
 
-#### Contents
+#### Content:
 
-We devided this lab into sections below:
-
-1. [Prerequiste](1-prerequiste/)
-2. [Web ACLs and Managed Rules](2-acls-managed-rules/)
-3. [Custom Rules](3-custom-rules/)
-4. [Advanced Custom Rules](4-advanced-rules/)
-5. [Testing New Rules](5-testing/)
-6. [Logging](6-logging/)
-7. [Cleanup](7-clean-up)
+1. [Introduction](1-introduction/)
+2. [Prepare](2-prepare/)
+3. [Using AWS WAF](3-useawswaf/)
+4. [Clean up resources](4-cleanup/)
