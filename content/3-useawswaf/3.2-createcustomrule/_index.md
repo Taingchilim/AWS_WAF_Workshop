@@ -15,23 +15,23 @@ WAF allows you to [create your own rules](https://docs.aws.amazon.com/waf/latest
 * Click **Rules**.
 * Click **Add Rules**.
 * Click **Add my own rules and rule groups**.
-![Create Custom Rule](/images/3-useawswaf/3.2-createcustomrule/createcustomrule-001.png?width=90pc)
+![Create Custom Rule](/images/3-useawswaf/3.2-createcustomrule/createcustomrule-001.png?featherlight=false&width=90pc)
 2. In the **Rule builder** section.
 * In the **Name** section, type ```MyCustomRule-X-TomatoAttack```.
-![Create Custom Rule](/images/3-useawswaf/3.2-createcustomrule/createcustomrule-002.png?width=90pc)
+![Create Custom Rule](/images/3-useawswaf/3.2-createcustomrule/createcustomrule-002.png?featherlight=false&width=90pc)
 3. In the **Statement** section.
 * In the **Inspect** section, Select **Single header**.
 * In the **Header field name** section, type ```X-TomatoAttack```.
 * In the **Match type** section, Select **Size greater than or equal to**.
 * In the **Size in bytes** section, type ```0```.
-![Create Custom Rule](/images/3-useawswaf/3.2-createcustomrule/createcustomrule-003.png?width=90pc)
+![Create Custom Rule](/images/3-useawswaf/3.2-createcustomrule/createcustomrule-003.png?featherlight=false&width=90pc)
 4. In the **Action** section.
 * In the **Action** section, Click **Block**.
 * Click **Add rule**.
-![Create Custom Rule](/images/3-useawswaf/3.2-createcustomrule/createcustomrule-004.png?width=90pc)
+![Create Custom Rule](/images/3-useawswaf/3.2-createcustomrule/createcustomrule-004.png?featherlight=false&width=90pc)
 5. Click **Save**.
-![Create Custom Rule](/images/3-useawswaf/3.2-createcustomrule/createcustomrule-005.png?width=90pc)
-![Create Custom Rule](/images/3-useawswaf/3.2-createcustomrule/createcustomrule-006.png?width=90pc)
+![Create Custom Rule](/images/3-useawswaf/3.2-createcustomrule/createcustomrule-005.png?featherlight=false&width=90pc)
+![Create Custom Rule](/images/3-useawswaf/3.2-createcustomrule/createcustomrule-006.png?featherlight=false&width=90pc)
 {{% notice info %}} 
 You could also achieve the same goal using a [regular expression](https://docs.aws.amazon.com/waf/latest/developerguide/waf-rule-statement-type-regex-pattern-set-match).
 {{% /notice %}}
@@ -50,4 +50,4 @@ curl -H "X-TomatoAttack: Green" "<Your Juice Shop URL>"
 8. In the detail of **Web ACL** page.
 * Click **Overview**.
 * Drag the screen down, in the **Sampled requests** section, You will see these requests marked as **BLOCK**.
-![Create Custom Rule](/images/3-useawswaf/3.2-createcustomrule/createcustomrule-009.png?width=90pc)
+![Create Custom Rule](/images/3-useawswaf/3.2-createcustomrule/createcustomrule-009.png?featherlight=false&width=90pc)

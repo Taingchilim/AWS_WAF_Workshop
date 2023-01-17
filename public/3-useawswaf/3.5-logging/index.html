@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.97.3" />
+    <meta name="generator" content="Hugo 0.99.1" />
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Log the requests :: AWS Web Application Firewall</title>
 
     
-    <link href="/css/nucleus.css?1653830059" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1653830059" rel="stylesheet">
-    <link href="/css/hybrid.css?1653830059" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1653830059" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1653830059" rel="stylesheet">
-    <link href="/css/auto-complete.css?1653830059" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1653830059" rel="stylesheet">
-    <link href="/css/theme.css?1653830059" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1653830059" rel="stylesheet">
+    <link href="/css/nucleus.css?1673957220" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1673957220" rel="stylesheet">
+    <link href="/css/hybrid.css?1673957220" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1673957220" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1673957220" rel="stylesheet">
+    <link href="/css/auto-complete.css?1673957220" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1673957220" rel="stylesheet">
+    <link href="/css/theme.css?1673957220" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1673957220" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1653830059" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1673957220" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1653830059"></script>
+    <script src="/js/jquery-3.3.1.min.js?1673957220"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1653830059"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1653830059"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1673957220"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1673957220"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1653830059"></script>
+<script type="text/javascript" src="/js/search.js?1673957220"></script>
 
     
   </div>
@@ -485,7 +485,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color=orange>28-05-2022</font></i>
+        <i><font color=orange>17-01-2023</font></i>
     </left>
     <left>
         <br>
@@ -593,7 +593,7 @@
 <ul>
 <li>Click <strong>Kinesis Data Firehose</strong>.</li>
 <li>Click <strong>Create delivery stream</strong>.
-<img src="/images/3-useawswaf/3.5-logging/logging-001.png?width=90pc" alt="Create Kinesis Data Firehose">
+<img src="/images/3-useawswaf/3.5-logging/logging-001.png?featherlight=false&amp;width=90pc" alt="Create Kinesis Data Firehose">
 
 <div class="notices note" ><p>Make sure to create the resource in <strong>us-east-1</strong>. [This is required when capturing logs for CloudFront](<a href="https://docs.aws.amazon.com/waf/latest/developerguide/logging">https://docs.aws.amazon.com/waf/latest/developerguide/logging</a>.</p>
 </div>
@@ -605,7 +605,7 @@
 <ul>
 <li>In the <strong>Source</strong> section, select <strong>Direct PUT</strong>.</li>
 <li>In the <strong>Destination</strong> section, select <strong>Amazon S3</strong>.
-<img src="/images/3-useawswaf/3.5-logging/logging-002.png?width=90pc" alt="Create Kinesis Data Firehose"></li>
+<img src="/images/3-useawswaf/3.5-logging/logging-002.png?featherlight=false&amp;width=90pc" alt="Create Kinesis Data Firehose"></li>
 </ul>
 <ol start="3">
 <li>In the <strong>Choose source and destination</strong> section, type <code>aws-waf-logs-workshop-26</code>.
@@ -613,26 +613,26 @@
 <div class="notices note" ><p>Prefix the Kinesis Data Firehose with <code>aws-waf-logs-workshop-</code>. This is required by the WAF service.</p>
 </div>
 
-<img src="/images/3-useawswaf/3.5-logging/logging-003.png?width=90pc" alt="Create Kinesis Data Firehose"></li>
+<img src="/images/3-useawswaf/3.5-logging/logging-003.png?featherlight=false&amp;width=90pc" alt="Create Kinesis Data Firehose"></li>
 <li>In the <strong>Destination settings</strong> section.</li>
 </ol>
 <ul>
 <li>Click <strong>Browse</strong>.
-<img src="/images/3-useawswaf/3.5-logging/logging-004.png?width=90pc" alt="Create Kinesis Data Firehose"></li>
+<img src="/images/3-useawswaf/3.5-logging/logging-004.png?featherlight=false&amp;width=90pc" alt="Create Kinesis Data Firehose"></li>
 <li>Select <strong>aws-waf-logs-001</strong>(S3 bucket we created) is the storage.</li>
 <li>Click <strong>Choose</strong>.
-<img src="/images/3-useawswaf/3.5-logging/logging-005.png?width=90pc" alt="Create Kinesis Data Firehose"></li>
+<img src="/images/3-useawswaf/3.5-logging/logging-005.png?featherlight=false&amp;width=90pc" alt="Create Kinesis Data Firehose"></li>
 </ul>
 <ol start="5">
 <li>Drag the screen down, Click <strong>Create delivery stream</strong>.
-<img src="/images/3-useawswaf/3.5-logging/logging-006.png?width=90pc" alt="Create Kinesis Data Firehose"></li>
+<img src="/images/3-useawswaf/3.5-logging/logging-006.png?featherlight=false&amp;width=90pc" alt="Create Kinesis Data Firehose"></li>
 <li>Go to <a href="https://console.aws.amazon.com/wafv2/homev2/start">AWS WAF Console</a>.</li>
 </ol>
 <ul>
 <li>Click <strong>Web ACLs</strong>.</li>
 <li>Select <strong>Global</strong>.</li>
 <li>Click <strong>waf-workshop-juice-shop</strong>.
-<img src="/images/3-useawswaf/3.5-logging/logging-007.png?width=90pc" alt="Use Kinesis"></li>
+<img src="/images/3-useawswaf/3.5-logging/logging-007.png?featherlight=false&amp;width=90pc" alt="Use Kinesis"></li>
 </ul>
 <ol start="7">
 <li>In the information of your <strong>Web ACL</strong> page.</li>
@@ -640,7 +640,7 @@
 <ul>
 <li>Select <strong>Logging and metrics</strong> tab.</li>
 <li>Click <strong>Enable</strong>.
-<img src="/images/3-useawswaf/3.5-logging/logging-008.png?width=90pc" alt="Use Kinesis"></li>
+<img src="/images/3-useawswaf/3.5-logging/logging-008.png?featherlight=false&amp;width=90pc" alt="Use Kinesis"></li>
 </ul>
 <ol start="8">
 <li>In the <strong>Logging destination</strong> section.</li>
@@ -648,7 +648,7 @@
 <ul>
 <li>Click <strong>Kinesis Data Firehose stream</strong>.</li>
 <li>In the <strong>Amazon Kinesis Data Firehose delivery stream</strong> section, Select <strong>aws-waf-logs-workshop-26</strong>.
-<img src="/images/3-useawswaf/3.5-logging/logging-009.png?width=90pc" alt="Use Kinesis"></li>
+<img src="/images/3-useawswaf/3.5-logging/logging-009.png?featherlight=false&amp;width=90pc" alt="Use Kinesis"></li>
 </ul>
 <ol start="9">
 <li>In the <strong>Redacted fields</strong> section.</li>
@@ -658,7 +658,7 @@
 <li>In the <strong>Redacted headers</strong> section, Click <strong>Add header</strong></li>
 <li>Add the header value: <code>Cookie</code>.</li>
 <li>Click <strong>Save</strong>
-<img src="/images/3-useawswaf/3.5-logging/logging-010.png?width=90pc" alt="Use Kinesis"></li>
+<img src="/images/3-useawswaf/3.5-logging/logging-010.png?featherlight=false&amp;width=90pc" alt="Use Kinesis"></li>
 </ul>
 <ol start="10">
 <li>Run command</li>
@@ -669,7 +669,7 @@ curl -H &#34;x-milkshake: chocolate&#34; &#34;&lt;Your Juice Shop URL&gt;&#34;
 </code></pre><p><img src="/images/3-useawswaf/3.5-logging/logging-011.png?width=60pc" alt="Use Kinesis">
 <img src="/images/3-useawswaf/3.5-logging/logging-012.png?width=60pc" alt="Use Kinesis">
 11. Download the logged file in S3 bucket.
-<img src="/images/3-useawswaf/3.5-logging/logging-013.png?width=90pc" alt="Use Kinesis">
+<img src="/images/3-useawswaf/3.5-logging/logging-013.png?featherlight=false&amp;width=90pc" alt="Use Kinesis">
 12. Search for the Cookie header in the logged file.
 <img src="/images/3-useawswaf/3.5-logging/logging-014.png?width=50pc" alt="Use Kinesis"></p>
 <h4 id="conclusion">Conclusion</h4>
@@ -922,19 +922,19 @@ curl -H &#34;x-milkshake: chocolate&#34; &#34;&lt;Your Juice Shop URL&gt;&#34;
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1653830059"></script>
-    <script src="/js/perfect-scrollbar.min.js?1653830059"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1653830059"></script>
-    <script src="/js/jquery.sticky.js?1653830059"></script>
-    <script src="/js/featherlight.min.js?1653830059"></script>
-    <script src="/js/highlight.pack.js?1653830059"></script>
+    <script src="/js/clipboard.min.js?1673957220"></script>
+    <script src="/js/perfect-scrollbar.min.js?1673957220"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1673957220"></script>
+    <script src="/js/jquery.sticky.js?1673957220"></script>
+    <script src="/js/featherlight.min.js?1673957220"></script>
+    <script src="/js/highlight.pack.js?1673957220"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1653830059"></script>
-    <script src="/js/learn.js?1653830059"></script>
-    <script src="/js/hugo-learn.js?1653830059"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1673957220"></script>
+    <script src="/js/learn.js?1673957220"></script>
+    <script src="/js/hugo-learn.js?1673957220"></script>
 
-    <link href="/mermaid/mermaid.css?1653830059" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1653830059"></script>
+    <link href="/mermaid/mermaid.css?1673957220" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1673957220"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

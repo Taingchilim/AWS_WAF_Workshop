@@ -23,22 +23,22 @@ Bạn có thể tham khảo thêm tài liệu [Pwning OWASP Juice Shop](https://
 
 * Click **Next**.
 
-![Create the sample web app](/images/2-prepare/2.2-createthesamplewebapp/createthesamplewebapp-001.png?width=90pc)
+![Create the sample web app](/images/2-prepare/2.2-createthesamplewebapp/createthesamplewebapp-001.png?featherlight=false&width=90pc)
 
 2. Tại trang **Specify stack details**, Click **Next**. 
-![Create the sample web app](/images/2-prepare/2.2-createthesamplewebapp/createthesamplewebapp-002.png?width=90pc)
+![Create the sample web app](/images/2-prepare/2.2-createthesamplewebapp/createthesamplewebapp-002.png?featherlight=false&width=90pc)
 3. Tại trang **Configure stack options**, Click **Next**.
-![Create the sample web app](/images/2-prepare/2.2-createthesamplewebapp/createthesamplewebapp-003.png?width=90pc)
+![Create the sample web app](/images/2-prepare/2.2-createthesamplewebapp/createthesamplewebapp-003.png?featherlight=false&width=90pc)
 4. Tại trang **Review WAFWorkshopSampleWebApp**.
 * Kéo màn hình xuống dưới.
 * Click **I acknowledge that AWS CloudFormation might create IAM resources with custom names**.
 * Click **I acknowledge that AWS CloudFormation might require the following capability: CAPABILITY_AUTO_EXPAND**.
 * Click **Create stack**.
-![Create the sample web app](/images/2-prepare/2.2-createthesamplewebapp/createthesamplewebapp-004.png?width=90pc)
+![Create the sample web app](/images/2-prepare/2.2-createthesamplewebapp/createthesamplewebapp-004.png?featherlight=false&width=90pc)
 {{% notice note %}} 
 **Cloudformation** sẽ mất khoảng 5 phút để triển khai ứng dụng Juice Shop. Hãy đợi cho đến khi tất cả các stack ở trạng thái **CREATE_COMPLETE**.
 {{% /notice %}}
-![Create the sample web app](/images/2-prepare/2.2-createthesamplewebapp/createthesamplewebapp-005.png?width=90pc)
+![Create the sample web app](/images/2-prepare/2.2-createthesamplewebapp/createthesamplewebapp-005.png?featherlight=false&width=90pc)
 5. Click **Output**, Click **dkievcmqb5kzc.cloudfront.net**(địa chỉ trang web Juice Shop) để truy cập thử trang ứng dụng của bạn.
-![Create the sample web app](/images/2-prepare/2.2-createthesamplewebapp/createthesamplewebapp-006.png?width=90pc)
-![Create the sample web app](/images/2-prepare/2.2-createthesamplewebapp/createthesamplewebapp-007.png?width=90pc)
+![Create the sample web app](/images/2-prepare/2.2-createthesamplewebapp/createthesamplewebapp-006.png?featherlight=false&width=90pc)
+![Create the sample web app](/images/2-prepare/2.2-createthesamplewebapp/createthesamplewebapp-007.png?featherlight=false&width=90pc)

@@ -24,7 +24,7 @@ Rule này sẽ chặn tất cả các request thỏa hai điều kiện:
 * Click **Rules**.
 * Click **Add Rules**.
 * Click **Add my own rules and rule groups**.
-![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-001.png?width=90pc)
+![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-001.png?featherlight=false&width=90pc)
 2. Trong phần **Rule builder**.
 * Click **Rule JSON editor**.
 * Tại mục **JSON** điền 
@@ -82,11 +82,11 @@ Rule này sẽ chặn tất cả các request thỏa hai điều kiện:
   }
 }
 ```
-![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-002.png?width=90pc)
+![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-002.png?featherlight=false&width=90pc)
 3. Kéo màn hình xuống dưới, Click **Add rule**.
-![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-003.png?width=90pc)
+![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-003.png?featherlight=false&width=90pc)
 4. Click **Save**.
-![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-004.png?width=90pc)
+![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-004.png?featherlight=false&width=90pc)
 #### Cập nhật Rule
 Rule này sẽ chặn tất cả các request thỏa hai điều kiện:
 * Chứa header ```x-milkshake: chocolate``` và cả header ```x-favourite-topping: nuts```
@@ -94,9 +94,9 @@ Rule này sẽ chặn tất cả các request thỏa hai điều kiện:
 1. Ở trang thông tin **Web ACL** của bạn.
 * Click **Rules**.
 * Click **complex-rule-challenge**(tên rule muốn cập nhật).
-![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-005.png?width=90pc)
+![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-005.png?featherlight=false&width=90pc)
 2. Click **Edit**.
-![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-006.png?width=90pc)
+![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-006.png?featherlight=false&width=90pc)
 3. Trong phần **Rule builder**.
 * Click **Rule JSON editor**.
 * Tại mục **JSON** điền 
@@ -200,11 +200,11 @@ Rule này sẽ chặn tất cả các request thỏa hai điều kiện:
   }
 }
 ```
-![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-007.png?width=90pc)
+![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-007.png?featherlight=false&width=90pc)
 4. Click **Save rule**.
-![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-008.png?width=90pc)
+![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-008.png?featherlight=false&width=90pc)
 5. Click **Save**
-![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-009.png?width=90pc)
+![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-009.png?featherlight=false&width=90pc)
 6. Chạy lệnh
 ```
 # This will be allowed

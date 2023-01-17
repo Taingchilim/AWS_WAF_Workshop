@@ -17,23 +17,23 @@ WAF cho phép bạn tạo [các rule tùy chỉnh](https://docs.aws.amazon.com/w
 * Click **Rules**.
 * Click **Add Rules**.
 * Click **Add my own rules and rule groups**.
-![Create Custom Rule](/images/3-useawswaf/3.2-createcustomrule/createcustomrule-001.png?width=90pc)
+![Create Custom Rule](/images/3-useawswaf/3.2-createcustomrule/createcustomrule-001.png?featherlight=false&width=90pc)
 2. Trong phần **Rule builder**.
 * Tại mục **Name** điền ```MyCustomRule-X-TomatoAttack```.
-![Create Custom Rule](/images/3-useawswaf/3.2-createcustomrule/createcustomrule-002.png?width=90pc)
+![Create Custom Rule](/images/3-useawswaf/3.2-createcustomrule/createcustomrule-002.png?featherlight=false&width=90pc)
 3. Trong phần **Statement**.
 * Tại mục **Inspect** Chọn **Single header**.
 * Tại mục **Header field name** điền ```X-TomatoAttack```.
 * Tại mục **Match type** Chọn **Size greater than or equal to**.
 * Tại mục **Size in bytes** điền ```0```.
-![Create Custom Rule](/images/3-useawswaf/3.2-createcustomrule/createcustomrule-003.png?width=90pc)
+![Create Custom Rule](/images/3-useawswaf/3.2-createcustomrule/createcustomrule-003.png?featherlight=false&width=90pc)
 4. Trong phần **Action**.
 * Tại mục **Action** Click **Block**.
 * Click **Add rule**.
-![Create Custom Rule](/images/3-useawswaf/3.2-createcustomrule/createcustomrule-004.png?width=90pc)
+![Create Custom Rule](/images/3-useawswaf/3.2-createcustomrule/createcustomrule-004.png?featherlight=false&width=90pc)
 5. Click **Save**.
-![Create Custom Rule](/images/3-useawswaf/3.2-createcustomrule/createcustomrule-005.png?width=90pc)
-![Create Custom Rule](/images/3-useawswaf/3.2-createcustomrule/createcustomrule-006.png?width=90pc)
+![Create Custom Rule](/images/3-useawswaf/3.2-createcustomrule/createcustomrule-005.png?featherlight=false&width=90pc)
+![Create Custom Rule](/images/3-useawswaf/3.2-createcustomrule/createcustomrule-006.png?featherlight=false&width=90pc)
 {{% notice info %}} 
 Bạn có thể đạt được kết quả tương tự nếu dùng [regular expression](https://docs.aws.amazon.com/waf/latest/developerguide/waf-rule-statement-type-regex-pattern-set-match.html)
 {{% /notice %}}
@@ -52,4 +52,4 @@ curl -H "X-TomatoAttack: Green" "<Your Juice Shop URL>"
 8. Ở trang thông tin **Web ACL** của bạn.
 * Click **Overview**.
 * Kéo màn hình xuống phần **Sampled requests**, Bạn sẽ thấy các request nhận được có trạng thái **BLOCK**..
-![Create Custom Rule](/images/3-useawswaf/3.2-createcustomrule/createcustomrule-009.png?width=90pc)
+![Create Custom Rule](/images/3-useawswaf/3.2-createcustomrule/createcustomrule-009.png?featherlight=false&width=90pc)

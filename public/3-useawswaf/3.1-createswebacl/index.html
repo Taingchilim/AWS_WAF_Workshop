@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.97.3" />
+    <meta name="generator" content="Hugo 0.99.1" />
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Web ACLs with managed rules :: AWS Web Application Firewall</title>
 
     
-    <link href="/css/nucleus.css?1653830059" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1653830059" rel="stylesheet">
-    <link href="/css/hybrid.css?1653830059" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1653830059" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1653830059" rel="stylesheet">
-    <link href="/css/auto-complete.css?1653830059" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1653830059" rel="stylesheet">
-    <link href="/css/theme.css?1653830059" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1653830059" rel="stylesheet">
+    <link href="/css/nucleus.css?1673957220" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1673957220" rel="stylesheet">
+    <link href="/css/hybrid.css?1673957220" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1673957220" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1673957220" rel="stylesheet">
+    <link href="/css/auto-complete.css?1673957220" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1673957220" rel="stylesheet">
+    <link href="/css/theme.css?1673957220" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1673957220" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1653830059" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1673957220" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1653830059"></script>
+    <script src="/js/jquery-3.3.1.min.js?1673957220"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1653830059"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1653830059"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1673957220"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1673957220"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1653830059"></script>
+<script type="text/javascript" src="/js/search.js?1673957220"></script>
 
     
   </div>
@@ -485,7 +485,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color=orange>28-05-2022</font></i>
+        <i><font color=orange>17-01-2023</font></i>
     </left>
     <left>
         <br>
@@ -599,7 +599,7 @@
 </ol>
 <ul>
 <li>Click <strong>Create web ACL</strong>.
-<img src="/images/3-useawswaf/3.1-createwebacl/createwebacl-001.png?width=90pc" alt="Create Web ACL"></li>
+<img src="/images/3-useawswaf/3.1-createwebacl/createwebacl-001.png?featherlight=false&amp;width=90pc" alt="Create Web ACL"></li>
 </ul>
 <ol start="2">
 <li>In the <strong>Web ACL details</strong> section.</li>
@@ -608,43 +608,43 @@
 <li>In the <strong>Resource type</strong> section, Click <strong>CloudFront distributions</strong>.</li>
 <li>In the <strong>Name</strong> section type <code>waf-workshop-juice-shop</code>.</li>
 <li>In the <strong>Description</strong> section type <code>Web ACL for the aws-waf-workshop</code>.
-<img src="/images/3-useawswaf/3.1-createwebacl/createwebacl-002.png?width=90pc" alt="Create Web ACL"></li>
+<img src="/images/3-useawswaf/3.1-createwebacl/createwebacl-002.png?featherlight=false&amp;width=90pc" alt="Create Web ACL"></li>
 </ul>
 <ol start="3">
 <li>In the <strong>Associated AWS resources</strong> section, Click <strong>Add AWS resources</strong>.
-<img src="/images/3-useawswaf/3.1-createwebacl/createwebacl-003.png?width=90pc" alt="Create Web ACL"></li>
+<img src="/images/3-useawswaf/3.1-createwebacl/createwebacl-003.png?featherlight=false&amp;width=90pc" alt="Create Web ACL"></li>
 <li>In the <strong>Add AWS resources</strong> section, Click <strong>E24BURECS1O10C - dkievcmqb5kzc.cloudfront.net - WAF Workshop CloudFront Distribution</strong>(CloudFront distribution we created).</li>
 </ol>
 <ul>
 <li>Click <strong>Add</strong>.
-<img src="/images/3-useawswaf/3.1-createwebacl/createwebacl-004.png?width=90pc" alt="Create Web ACL"></li>
+<img src="/images/3-useawswaf/3.1-createwebacl/createwebacl-004.png?featherlight=false&amp;width=90pc" alt="Create Web ACL"></li>
 </ul>
 <ol start="5">
 <li>Click <strong>Next</strong>.
-<img src="/images/3-useawswaf/3.1-createwebacl/createwebacl-005.png?width=90pc" alt="Create Web ACL"></li>
+<img src="/images/3-useawswaf/3.1-createwebacl/createwebacl-005.png?featherlight=false&amp;width=90pc" alt="Create Web ACL"></li>
 <li>In the <strong>Rules</strong> section.</li>
 </ol>
 <ul>
 <li>Click <strong>Add rules</strong>.</li>
 <li>Click <strong>Add managed rule groups</strong>.
-<img src="/images/3-useawswaf/3.1-createwebacl/createwebacl-006.png?width=90pc" alt="Create Web ACL"></li>
+<img src="/images/3-useawswaf/3.1-createwebacl/createwebacl-006.png?featherlight=false&amp;width=90pc" alt="Create Web ACL"></li>
 </ul>
 <ol start="7">
 <li>In the <strong>Add managed rule groups</strong> page, Click <strong>AWS managed rule groups</strong>.
-<img src="/images/3-useawswaf/3.1-createwebacl/createwebacl-007.png?width=90pc" alt="Create Web ACL"></li>
+<img src="/images/3-useawswaf/3.1-createwebacl/createwebacl-007.png?featherlight=false&amp;width=90pc" alt="Create Web ACL"></li>
 <li>Select <strong>Core Rule Set</strong> and <strong>SQL Database</strong>.
-<img src="/images/3-useawswaf/3.1-createwebacl/createwebacl-008.png?width=90pc" alt="Create Web ACL"></li>
+<img src="/images/3-useawswaf/3.1-createwebacl/createwebacl-008.png?featherlight=false&amp;width=90pc" alt="Create Web ACL"></li>
 <li>Drag the screen down, Click <strong>Add rules</strong>.
-<img src="/images/3-useawswaf/3.1-createwebacl/createwebacl-009.png?width=90pc" alt="Create Web ACL"></li>
+<img src="/images/3-useawswaf/3.1-createwebacl/createwebacl-009.png?featherlight=false&amp;width=90pc" alt="Create Web ACL"></li>
 <li>In the <strong>Add managed rule groups</strong> page, click <strong>Next</strong>.
-<img src="/images/3-useawswaf/3.1-createwebacl/createwebacl-010.png?width=90pc" alt="Create Web ACL"></li>
+<img src="/images/3-useawswaf/3.1-createwebacl/createwebacl-010.png?featherlight=false&amp;width=90pc" alt="Create Web ACL"></li>
 <li>In the <strong>Set rule priority</strong> page, click <strong>Next</strong>.
-<img src="/images/3-useawswaf/3.1-createwebacl/createwebacl-011.png?width=90pc" alt="Create Web ACL"></li>
+<img src="/images/3-useawswaf/3.1-createwebacl/createwebacl-011.png?featherlight=false&amp;width=90pc" alt="Create Web ACL"></li>
 <li>In the <strong>Configure metrics</strong> page, click <strong>Next</strong>.
-<img src="/images/3-useawswaf/3.1-createwebacl/createwebacl-012.png?width=90pc" alt="Create Web ACL"></li>
+<img src="/images/3-useawswaf/3.1-createwebacl/createwebacl-012.png?featherlight=false&amp;width=90pc" alt="Create Web ACL"></li>
 <li>In the <strong>Review and create web ACL</strong> page, Drag the screen down, click <strong>Create web ACL</strong>.
-<img src="/images/3-useawswaf/3.1-createwebacl/createwebacl-013.png?width=90pc" alt="Create Web ACL">
-<img src="/images/3-useawswaf/3.1-createwebacl/createwebacl-014.png?width=90pc" alt="Create Web ACL"></li>
+<img src="/images/3-useawswaf/3.1-createwebacl/createwebacl-013.png?featherlight=false&amp;width=90pc" alt="Create Web ACL">
+<img src="/images/3-useawswaf/3.1-createwebacl/createwebacl-014.png?featherlight=false&amp;width=90pc" alt="Create Web ACL"></li>
 <li>Run command</li>
 </ol>
 <pre tabindex="0"><code># This imitates a Cross Site Scripting attack
@@ -901,19 +901,19 @@ curl -X POST &lt;Your Juice Shop URL&gt; -F &#34;user=&#39;AND 1=1;&#34;
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1653830059"></script>
-    <script src="/js/perfect-scrollbar.min.js?1653830059"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1653830059"></script>
-    <script src="/js/jquery.sticky.js?1653830059"></script>
-    <script src="/js/featherlight.min.js?1653830059"></script>
-    <script src="/js/highlight.pack.js?1653830059"></script>
+    <script src="/js/clipboard.min.js?1673957220"></script>
+    <script src="/js/perfect-scrollbar.min.js?1673957220"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1673957220"></script>
+    <script src="/js/jquery.sticky.js?1673957220"></script>
+    <script src="/js/featherlight.min.js?1673957220"></script>
+    <script src="/js/highlight.pack.js?1673957220"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1653830059"></script>
-    <script src="/js/learn.js?1653830059"></script>
-    <script src="/js/hugo-learn.js?1653830059"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1673957220"></script>
+    <script src="/js/learn.js?1673957220"></script>
+    <script src="/js/hugo-learn.js?1673957220"></script>
 
-    <link href="/mermaid/mermaid.css?1653830059" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1653830059"></script>
+    <link href="/mermaid/mermaid.css?1673957220" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1673957220"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

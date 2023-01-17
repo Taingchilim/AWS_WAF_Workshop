@@ -23,7 +23,7 @@ This Rule will block any requests that either::
 * Click **Rules**.
 * Click **Add Rules**.
 * Click **Add my own rules and rule groups**.
-![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-001.png?width=90pc)
+![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-001.png?featherlight=false&width=90pc)
 2. In the  **Rule builder** section.
 * Click **Rule JSON editor**.
 * In the **JSON** section, type 
@@ -81,11 +81,11 @@ This Rule will block any requests that either::
   }
 }
 ```
-![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-002.png?width=90pc)
+![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-002.png?featherlight=false&width=90pc)
 3. Drag the screen down, Click **Add rule**.
-![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-003.png?width=90pc)
+![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-003.png?featherlight=false&width=90pc)
 4. Click **Save**.
-![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-004.png?width=90pc)
+![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-004.png?featherlight=false&width=90pc)
 #### Update the Rule
 This rule was working, but the attackers have adapted. Now malicious requests contain either:
 * The header ```x-milkshake: chocolate``` and the header ```x-favourite-topping: nuts```
@@ -93,9 +93,9 @@ This rule was working, but the attackers have adapted. Now malicious requests co
 1. In the detail of **Web ACL** page.
 * Click **Rules**.
 * Click **complex-rule-challenge**(the name of the rule you want update).
-![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-005.png?width=90pc)
+![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-005.png?featherlight=false&width=90pc)
 2. Click **Edit**.
-![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-006.png?width=90pc)
+![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-006.png?featherlight=false&width=90pc)
 3. In the **Rule builder** section.
 * Click **Rule JSON editor**.
 * In the **JSON** section, type 
@@ -199,11 +199,11 @@ This rule was working, but the attackers have adapted. Now malicious requests co
   }
 }
 ```
-![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-007.png?width=90pc)
+![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-007.png?featherlight=false&width=90pc)
 4. Click **Save rule**.
-![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-008.png?width=90pc)
+![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-008.png?featherlight=false&width=90pc)
 5. Click **Save**
-![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-009.png?width=90pc)
+![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-009.png?featherlight=false&width=90pc)
 6. Run command
 ```
 # This will be allowed

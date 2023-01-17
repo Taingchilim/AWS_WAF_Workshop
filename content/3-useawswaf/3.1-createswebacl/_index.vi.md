@@ -24,38 +24,38 @@ Ngoài ra thì ngay lúc này, bạn đang không có nhiều thời gian nên b
 Bài thực hành này sử dụng phiên bản mới nhất của AWS WAF. Hãy đảm bảo bạn không sử dụng WAF Classic.
 {{% /notice %}}
 * Click **Create web ACL**.
-![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-001.png?width=90pc)
+![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-001.png?featherlight=false&width=90pc)
 2. Trong phần **Web ACL details**.
 * Tại mục **Resource type**, Click **CloudFront distributions**.
 * Tại mục **Name** điền ```waf-workshop-juice-shop```.
 * Tại mục **Description** điền ```Web ACL for the aws-waf-workshop```.
-![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-002.png?width=90pc)
+![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-002.png?featherlight=false&width=90pc)
 3. Trong phần **Associated AWS resources**, Click **Add AWS resources**.
-![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-003.png?width=90pc)
+![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-003.png?featherlight=false&width=90pc)
 4. Trong phần **Add AWS resources**, Click **E24BURECS1O10C - dkievcmqb5kzc.cloudfront.net - WAF Workshop CloudFront Distribution**(CloudFront distribution chúng ta đã tạo).
 * Click **Add**.
-![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-004.png?width=90pc)
+![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-004.png?featherlight=false&width=90pc)
 5. Click **Next**.
-![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-005.png?width=90pc)
+![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-005.png?featherlight=false&width=90pc)
 6. Trong phần **Rules**.
 * Click **Add rules**.
 * Click **Add managed rule groups**.
-![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-006.png?width=90pc)
+![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-006.png?featherlight=false&width=90pc)
 7. Tại trang **Add managed rule groups**, Click **AWS managed rule groups**.
-![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-007.png?width=90pc)
+![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-007.png?featherlight=false&width=90pc)
 8. Chọn **Core Rule Set** và **SQL Database**.
-![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-008.png?width=90pc)
+![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-008.png?featherlight=false&width=90pc)
 9. Kéo màn hình xuống dưới, Click **Add rules**.
-![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-009.png?width=90pc)
+![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-009.png?featherlight=false&width=90pc)
 10. Tại trang **Add managed rule groups**, click **Next**.
-![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-010.png?width=90pc)
+![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-010.png?featherlight=false&width=90pc)
 11. Tại trang **Set rule priority**, click **Next**.
-![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-011.png?width=90pc)
+![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-011.png?featherlight=false&width=90pc)
 12. Tại trang **Configure metrics**, click **Next**.
-![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-012.png?width=90pc)
+![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-012.png?featherlight=false&width=90pc)
 13. Tại trang **Review and create web ACL**, Kéo màn hình xuống dưới, click **Create web ACL**.
-![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-013.png?width=90pc)
-![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-014.png?width=90pc)
+![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-013.png?featherlight=false&width=90pc)
+![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-014.png?featherlight=false&width=90pc)
 14. Chạy lệnh
 ```
 # This imitates a Cross Site Scripting attack

@@ -50,6 +50,11 @@ Rule bên dưới sẽ chặn các request với thông số truy xuất vào us
   }
 }
 ```
+![Testing new rule](/images/3-useawswaf/3.4-testingnewrule/createadvancecustomrule-001.png?featherlight=false&width=90pc)
+![Testing new rule](/images/3-useawswaf/3.4-testingnewrule/createadvancecustomrule-002.png?featherlight=false&width=90pc)
+![Testing new rule](/images/3-useawswaf/3.4-testingnewrule/createadvancecustomrule-003.png?featherlight=false&width=90pc)
+![Testing new rule](/images/3-useawswaf/3.4-testingnewrule/createadvancecustomrule-004.png?featherlight=false&width=90pc)
+
 2. Chạy lệnh.
 ```
 curl "<Your Juice Shop URL>?username=admin"
@@ -57,10 +62,10 @@ curl "<Your Juice Shop URL>?username=admin"
 ![Testing new rule](/images/3-useawswaf/3.4-testingnewrule/testingnewrule-001.png?width=60pc)
 3. Truy xuất đến trang [CloudWatch Metrics](https://console.aws.amazon.com/cloudwatch/home?#metricsV2:graph=~()).
 * Click **WAFv2**
-![Testing new rule](/images/3-useawswaf/3.4-testingnewrule/testingnewrule-002.png?width=90pc)
+![Testing new rule](/images/3-useawswaf/3.4-testingnewrule/testingnewrule-002.png?featherlight=false&width=90pc)
 * Click **Rule, WebACL**
-![Testing new rule](/images/3-useawswaf/3.4-testingnewrule/testingnewrule-003.png?width=90pc)
+![Testing new rule](/images/3-useawswaf/3.4-testingnewrule/testingnewrule-003.png?featherlight=false&width=90pc)
 * Chọn **count-von-count**, Chúng ta sẽ thấy 1 request trong phần **Untitled graph**.
-![Testing new rule](/images/3-useawswaf/3.4-testingnewrule/testingnewrule-004.png?width=90pc)
+![Testing new rule](/images/3-useawswaf/3.4-testingnewrule/testingnewrule-004.png?featherlight=false&width=90pc)
 
 Trước khi triển khai một rule mới vòa Web ACL cua bạn, hãy kiểm thử nó. Kiểm thử một rule mới với hành cộng Count, giám sát nó thông qua CloudWatch metrics.
