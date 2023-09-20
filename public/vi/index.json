@@ -4,14 +4,14 @@
 	"title": "AWS Web Application Firewall",
 	"tags": [],
 	"description": "",
-	"content": "AWS Web Application Firewall Tổng quan Trong bài lab này, bạn sẽ tìm hiểu khái niệm và thực hành về AWS Web Application Firewall.\n AWS WAF   Nội dung:  Giới thiệu Chuẩn bị Sử dụng AWS WAF Dọn dẹp tài nguyên  "
+	"content": "AWS Web Application Firewall Tổng quan Trong bài lab này, bạn sẽ tìm hiểu khái niệm và thực hành về AWS Web Application Firewall.\nHình ảnh: AWS WAF\nNội dung:  Giới thiệu Chuẩn bị Sử dụng AWS WAF Dọn dẹp tài nguyên  "
 },
 {
 	"uri": "/vi/1-introduction/",
 	"title": "Giới thiệu",
 	"tags": [],
 	"description": "",
-	"content": "Giới thiệu AWS WAF AWS WAF(AWS Web Application Firewall) là một dịch vụ web application firewall. Dịch vụ này giúp cho bạn bảo vệ ứng dụng Web hay API của bạn khỏi các tấn công từ bên ngoài gây ảnh hưởng đến vận hành, an ninh thông tin hoặc làm tiêu hao tài nguyên hệ thống.\nSử dụng WAF là một cách để phòng bị cho ứng dụng web của bạn. WAF có thể giảm thiểu các mối nguy hại về lỗ hổng như SQL Injection, Cross Site Scripting và các tấn công thông dụng khác nằm trong Top 10 OWASP. WAF cho phép bạn tạo các rule tùy chỉnh nhằm cho phép bạn tùy biến việc ngăn chặn hay cho phép các HTTP request từ bên ngoài trước khi chúng tới được ứng dụng của bạn.\n AWS WAF   "
+	"content": "Giới thiệu về AWS WAF AWS WAF (AWS Web Application Firewall) là một dịch vụ Web Application Firewall (tường lửa ứng dụng web) do Amazon Web Services cung cấp. Dịch vụ này giúp bạn bảo vệ ứng dụng web và API của bạn khỏi các cuộc tấn công từ bên ngoài có thể ảnh hưởng đến hiệu suất, an ninh thông tin, hoặc làm tiêu tốn tài nguyên hệ thống.\nSử dụng AWS WAF là một cách hiệu quả để bảo vệ ứng dụng web của bạn. AWS WAF có khả năng giảm thiểu các mối đe dọa từ các lỗ hổng bảo mật như SQL Injection, Cross Site Scripting (XSS), và các cuộc tấn công phổ biến khác được liệt kê trong Top 10 OWASP. Nó cho phép bạn tạo các luật tùy chỉnh để kiểm soát việc chặn hoặc cho phép các yêu cầu HTTP từ bên ngoài trước khi chúng tiếp cận ứng dụng của bạn.\n"
 },
 {
 	"uri": "/vi/2-prepare/2.1-creates3/",
@@ -46,7 +46,7 @@
 	"title": "Triển khai một Ứng dụng mẫu",
 	"tags": [],
 	"description": "",
-	"content": "Triển khai một Ứng dụng mẫu Ở trong bài thực hành này, bạn sẽ sử dụng OWASP Juice Shop. Đây là một ứng dụng web mã nguồn mở không bảo mật.\nBạn có thể tham khảo thêm tài liệu Pwning OWASP Juice Shop để biết thêm về ứng dụng và những lỗ hổng của nó chi tiết hơn.\n Truy cập vào các CloudFormation stack ở phía dưới (tùy theo Region) để tiến hành triển khai.     Region  Launch Template     US East (N. Virginia) (us-east-1)    US East (Ohio) (us-east-2)    US West(Oregon) (us-west-2)    EU (Ireland) (eu-west-1)    EU (London) (eu-west-2)      Click Next.  Tại trang Specify stack details, Click Next.  Tại trang Configure stack options, Click Next.  Tại trang Review WAFWorkshopSampleWebApp.   Kéo màn hình xuống dưới. Click I acknowledge that AWS CloudFormation might create IAM resources with custom names. Click I acknowledge that AWS CloudFormation might require the following capability: CAPABILITY_AUTO_EXPAND. Click Create stack. Cloudformation sẽ mất khoảng 5 phút để triển khai ứng dụng Juice Shop. Hãy đợi cho đến khi tất cả các stack ở trạng thái CREATE_COMPLETE.\n\r  Click Output, Click dkievcmqb5kzc.cloudfront.net(địa chỉ trang web Juice Shop) để truy cập thử trang ứng dụng của bạn.   "
+	"content": "Triển khai một Ứng dụng mẫu Trong bài thực hành này, bạn sẽ sử dụng OWASP Juice Shop. Đây là một ứng dụng web mã nguồn mở không bảo mật.\nBạn có thể tham khảo thêm tài liệu Pwning OWASP Juice Shop để biết thêm về ứng dụng và những lỗ hổng của nó chi tiết hơn.\n Truy cập vào các CloudFormation stack ở phía dưới (tùy theo Region) để tiến hành triển khai.     Region  Launch Template     US East (N. Virginia) (us-east-1)    US East (Ohio) (us-east-2)    US West(Oregon) (us-west-2)    EU (Ireland) (eu-west-1)    EU (London) (eu-west-2)     Click Next.  Tại trang Specify stack details, click Next.  Tại trang Configure stack options, click Next.  Tại trang Review WAFWorkshopSampleWebApp:  Kéo màn hình xuống dưới. Click I acknowledge that AWS CloudFormation might create IAM resources with custom names. Click I acknowledge that AWS CloudFormation might require the following capability: CAPABILITY_AUTO_EXPAND. Click Create stack.    Lưu ý: CloudFormation sẽ mất khoảng 5 phút để triển khai ứng dụng Juice Shop. Hãy đợi cho đến khi tất cả các stack ở trạng thái CREATE_COMPLETE.\nClick Output, click dkievcmqb5kzc.cloudfront.net (địa chỉ trang web Juice Shop) để truy cập thử trang ứng dụng của bạn.  "
 },
 {
 	"uri": "/vi/3-useawswaf/3.3-createadvancecustomrule/",
@@ -60,7 +60,7 @@
 	"title": "Sử dụng AWS WAF",
 	"tags": [],
 	"description": "",
-	"content": "Sử dụng AWS WAF Trong phần này chúng ta sẽ thực hiện tạo Web ACL từ WAF console, tạo Rule cho WAF của bạn, kiểm thử Rule mới và lưu nhật ký requests.\nNội dung:  Web ACLs với managed rules Custom Rule Custom Rule Nâng cao Kiểm thử Rule mới Ghi nhật ký request  "
+	"content": "Sử dụng AWS WAF Trong phần này, chúng ta sẽ thực hiện các bước sau để sử dụng AWS WAF:\n Tạo Web ACL từ WAF console. Tạo Rule cho WAF của bạn. Kiểm thử Rule mới. Lưu nhật ký requests.  Nội dung:  Web ACLs với managed rules Custom Rule Custom Rule Nâng cao Kiểm thử Rule mới Ghi nhật ký request  "
 },
 {
 	"uri": "/vi/4-cleanup/",

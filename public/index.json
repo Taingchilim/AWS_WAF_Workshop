@@ -39,7 +39,7 @@
 	"title": "Deploy the sample Web App",
 	"tags": [],
 	"description": "",
-	"content": "Deploy the sample Web App In this workshop you will use the OWASP Juice Shop. The Juice Shop is an Open Source web application that is intentionally insecure. Pwning OWASP Juice Shop is a free book that explains the app and its vulnerabilities in more detail.\n Choose a region to deploy the Sample Web App to, and follow the appropriate link from the table below.     Region  Launch Template     US East (N. Virginia) (us-east-1)    US East (Ohio) (us-east-2)    US West(Oregon) (us-west-2)    EU (Ireland) (eu-west-1)    EU (London) (eu-west-2)      Click Next.  In the Specify stack details page, Click Next.  In the Configure stack options page, Click Next.  In the Review WAFWorkshopSampleWebApp page.   Drag the screen down. Click I acknowledge that AWS CloudFormation might create IAM resources with custom names. Click I acknowledge that AWS CloudFormation might require the following capability: CAPABILITY_AUTO_EXPAND. Click Create stack. Cloudformation will take 5 minutes to deploy Juice Shop App. Wait until all stacks are shown in a CREATE_COMPLETE state..\n\r  Click Output, Click dkievcmqb5kzc.cloudfront.net(url of Juice Shop web) to go to your app.   "
+	"content": "Deploy the Sample Web App In this workshop, you will use the OWASP Juice Shop. The Juice Shop is an Open Source web application that is intentionally insecure. Pwning OWASP Juice Shop is a free book that explains the app and its vulnerabilities in more detail.\n  Choose a region to deploy the Sample Web App to, and follow the appropriate link from the table below.\n   Region Launch Template     US East (N. Virginia) (us-east-1)    US East (Ohio) (us-east-2)    US West (Oregon) (us-west-2)    EU (Ireland) (eu-west-1)    EU (London) (eu-west-2)       Click Next.\n  In the Specify stack details page, click Next.  In the Configure stack options page, click Next.   In the Review WAFWorkshopSampleWebApp page:\n Drag the screen down. Click I acknowledge that AWS CloudFormation might create IAM resources with custom names. Click I acknowledge that AWS CloudFormation might require the following capability: CAPABILITY_AUTO_EXPAND. Click Create stack.  Cloudformation will take 5 minutes to deploy Juice Shop App. Wait until all stacks are shown in a CREATE_COMPLETE state.\n\r  Click Output, Click dkievcmqb5kzc.cloudfront.net (URL of Juice Shop web) to go to your app.\n  "
 },
 {
 	"uri": "/2-prepare/",
@@ -60,7 +60,7 @@
 	"title": "Using AWS WAF",
 	"tags": [],
 	"description": "",
-	"content": "Using AWS WAF In this section, we will create the Web ACL from WAF console, create Rule for your WAF, test the New Rules and Log the requests.\nContent:  Web ACLs with managed rules Custom Rule Advanced Custom Rule Testing New Rules Log the requests  "
+	"content": "Using AWS WAF In this section, we will:\n Create a Web ACL from the WAF console. Create a Rule for your WAF. Test the New Rules. Log the requests.  Content:  Web ACLs with managed rules Custom Rule Advanced Custom Rule Testing New Rules Log the requests  "
 },
 {
 	"uri": "/4-cleanup/",

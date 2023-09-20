@@ -5,8 +5,15 @@ weight = 3
 chapter = false
 pre = "<b>3. </b>"
 +++
+
 #### Using AWS WAF
-In this section, we will create the **Web ACL** from **WAF console**, create **Rule** for your **WAF**, test the New Rules and Log the **requests**.
+
+In this section, we will:
+
+- Create a **Web ACL** from the **WAF console**.
+- Create a **Rule** for your **WAF**.
+- Test the New Rules.
+- Log the **requests**.
 
 #### Content:
 
