@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.99.1" />
+    <meta name="generator" content="Hugo 0.133.0">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Kiểm thử Rule mới :: AWS WEB APPLICATION FIREWALL</title>
 
     
-    <link href="/css/nucleus.css?1705242669" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1705242669" rel="stylesheet">
-    <link href="/css/hybrid.css?1705242669" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1705242669" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1705242669" rel="stylesheet">
-    <link href="/css/auto-complete.css?1705242669" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1705242669" rel="stylesheet">
-    <link href="/css/theme.css?1705242669" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1705242669" rel="stylesheet">
+    <link href="/css/nucleus.css?1733798128" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1733798128" rel="stylesheet">
+    <link href="/css/hybrid.css?1733798128" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1733798128" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1733798128" rel="stylesheet">
+    <link href="/css/auto-complete.css?1733798128" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1733798128" rel="stylesheet">
+    <link href="/css/theme.css?1733798128" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1733798128" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1705242669" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1733798128" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1705242669"></script>
+    <script src="/js/jquery-3.3.1.min.js?1733798128"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1705242669"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1705242669"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1733798128"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1733798128"></script>
 <script type="text/javascript">
     
-        var baseurl = "\/vi";
+        var baseurl = "\/\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1705242669"></script>
+<script type="text/javascript" src="/js/search.js?1733798128"></script>
 
     
   </div>
@@ -318,7 +318,7 @@
   
     
     <li data-nav-id="/vi/3-useawswaf/3.4-testingnewrule/" title="Kiểm thử Rule mới" class="dd-item 
-        parent
+        
         active
         
         ">
@@ -489,7 +489,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color=orange>14-01-2024</font></i>
+        <i><font color=orange>10-12-2024</font></i>
     </left>
     <left>
         <br>
@@ -593,7 +593,7 @@
 <p>Rule bên dưới sẽ chặn các request với thông số truy xuất vào username.</p>
 <h4 id="kiểm-thử-rule-mới">Kiểm thử Rule mới</h4>
 <ol>
-<li>Tạo một rule mới tương tự như <a href="../3.3-createadvancecustomrule/">tạo Custom Rule nâng cao trong phần 3.3</a>.</li>
+<li>Tạo một rule mới tương tự như <a href="/vi/3-useawswaf/3.3-createadvancecustomrule/">tạo Custom Rule nâng cao trong phần 3.3</a>.</li>
 </ol>
 <ul>
 <li>Tại mục <strong>JSON</strong> điền</li>
@@ -627,23 +627,23 @@
     }
   }
 }
-</code></pre><p><img src="/images/3-useawswaf/3.4-testingnewrule/createadvancecustomrule-001.png?featherlight=false&amp;width=90pc" alt="Testing new rule">
-<img src="/images/3-useawswaf/3.4-testingnewrule/createadvancecustomrule-002.png?featherlight=false&amp;width=90pc" alt="Testing new rule">
-<img src="/images/3-useawswaf/3.4-testingnewrule/createadvancecustomrule-003.png?featherlight=false&amp;width=90pc" alt="Testing new rule">
-<img src="/images/3-useawswaf/3.4-testingnewrule/createadvancecustomrule-004.png?featherlight=false&amp;width=90pc" alt="Testing new rule"></p>
+</code></pre><p><img alt="Testing new rule" src="/images/3-useawswaf/3.4-testingnewrule/createadvancecustomrule-001.png?featherlight=false&width=90pc">
+<img alt="Testing new rule" src="/images/3-useawswaf/3.4-testingnewrule/createadvancecustomrule-002.png?featherlight=false&width=90pc">
+<img alt="Testing new rule" src="/images/3-useawswaf/3.4-testingnewrule/createadvancecustomrule-003.png?featherlight=false&width=90pc">
+<img alt="Testing new rule" src="/images/3-useawswaf/3.4-testingnewrule/createadvancecustomrule-004.png?featherlight=false&width=90pc"></p>
 <ol start="2">
 <li>Chạy lệnh.</li>
 </ol>
 <pre tabindex="0"><code>curl &#34;&lt;Your Juice Shop URL&gt;?username=admin&#34;
-</code></pre><p><img src="/images/3-useawswaf/3.4-testingnewrule/testingnewrule-001.png?width=60pc" alt="Testing new rule">
+</code></pre><p><img alt="Testing new rule" src="/images/3-useawswaf/3.4-testingnewrule/testingnewrule-001.png?width=60pc">
 3. Truy xuất đến trang <a href="https://console.aws.amazon.com/cloudwatch/home?#metricsV2:graph=~()">CloudWatch Metrics</a>.</p>
 <ul>
 <li>Click <strong>WAFv2</strong>
-<img src="/images/3-useawswaf/3.4-testingnewrule/testingnewrule-002.png?featherlight=false&amp;width=90pc" alt="Testing new rule"></li>
+<img alt="Testing new rule" src="/images/3-useawswaf/3.4-testingnewrule/testingnewrule-002.png?featherlight=false&width=90pc"></li>
 <li>Click <strong>Rule, WebACL</strong>
-<img src="/images/3-useawswaf/3.4-testingnewrule/testingnewrule-003.png?featherlight=false&amp;width=90pc" alt="Testing new rule"></li>
+<img alt="Testing new rule" src="/images/3-useawswaf/3.4-testingnewrule/testingnewrule-003.png?featherlight=false&width=90pc"></li>
 <li>Chọn <strong>count-von-count</strong>, Chúng ta sẽ thấy 1 request trong phần <strong>Untitled graph</strong>.
-<img src="/images/3-useawswaf/3.4-testingnewrule/testingnewrule-004.png?featherlight=false&amp;width=90pc" alt="Testing new rule"></li>
+<img alt="Testing new rule" src="/images/3-useawswaf/3.4-testingnewrule/testingnewrule-004.png?featherlight=false&width=90pc"></li>
 </ul>
 <p>Trước khi triển khai một rule mới vòa Web ACL cua bạn, hãy kiểm thử nó. Kiểm thử một rule mới với hành cộng Count, giám sát nó thông qua CloudWatch metrics.</p>
 
@@ -894,19 +894,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1705242669"></script>
-    <script src="/js/perfect-scrollbar.min.js?1705242669"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1705242669"></script>
-    <script src="/js/jquery.sticky.js?1705242669"></script>
-    <script src="/js/featherlight.min.js?1705242669"></script>
-    <script src="/js/highlight.pack.js?1705242669"></script>
+    <script src="/js/clipboard.min.js?1733798128"></script>
+    <script src="/js/perfect-scrollbar.min.js?1733798128"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1733798128"></script>
+    <script src="/js/jquery.sticky.js?1733798128"></script>
+    <script src="/js/featherlight.min.js?1733798128"></script>
+    <script src="/js/highlight.pack.js?1733798128"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1705242669"></script>
-    <script src="/js/learn.js?1705242669"></script>
-    <script src="/js/hugo-learn.js?1705242669"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1733798128"></script>
+    <script src="/js/learn.js?1733798128"></script>
+    <script src="/js/hugo-learn.js?1733798128"></script>
 
-    <link href="/mermaid/mermaid.css?1705242669" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1705242669"></script>
+    <link href="/mermaid/mermaid.css?1733798128" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1733798128"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

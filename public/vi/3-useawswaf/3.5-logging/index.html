@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.99.1" />
+    <meta name="generator" content="Hugo 0.133.0">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Ghi nhật ký request :: AWS WEB APPLICATION FIREWALL</title>
 
     
-    <link href="/css/nucleus.css?1705242669" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1705242669" rel="stylesheet">
-    <link href="/css/hybrid.css?1705242669" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1705242669" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1705242669" rel="stylesheet">
-    <link href="/css/auto-complete.css?1705242669" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1705242669" rel="stylesheet">
-    <link href="/css/theme.css?1705242669" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1705242669" rel="stylesheet">
+    <link href="/css/nucleus.css?1733798128" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1733798128" rel="stylesheet">
+    <link href="/css/hybrid.css?1733798128" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1733798128" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1733798128" rel="stylesheet">
+    <link href="/css/auto-complete.css?1733798128" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1733798128" rel="stylesheet">
+    <link href="/css/theme.css?1733798128" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1733798128" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1705242669" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1733798128" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1705242669"></script>
+    <script src="/js/jquery-3.3.1.min.js?1733798128"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1705242669"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1705242669"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1733798128"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1733798128"></script>
 <script type="text/javascript">
     
-        var baseurl = "\/vi";
+        var baseurl = "\/\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1705242669"></script>
+<script type="text/javascript" src="/js/search.js?1733798128"></script>
 
     
   </div>
@@ -346,7 +346,7 @@
   
     
     <li data-nav-id="/vi/3-useawswaf/3.5-logging/" title="Ghi nhật ký request" class="dd-item 
-        parent
+        
         active
         
         ">
@@ -489,7 +489,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color=orange>14-01-2024</font></i>
+        <i><font color=orange>10-12-2024</font></i>
     </left>
     <left>
         <br>
@@ -598,7 +598,7 @@
 <ul>
 <li>Click <strong>Kinesis Data Firehose</strong>.</li>
 <li>Click <strong>Create delivery stream</strong>.
-<img src="/images/3-useawswaf/3.5-logging/logging-001.png?featherlight=false&amp;width=90pc" alt="Create Kinesis Data Firehose">
+<img alt="Create Kinesis Data Firehose" src="/images/3-useawswaf/3.5-logging/logging-001.png?featherlight=false&width=90pc">
 
 <div class="notices note" ><p>Bạn cần chắc rằng sẽ tạo trong region <strong>us-east-1</strong>. <a href="https://docs.aws.amazon.com/waf/latest/developerguide/logging.html">Đây là yêu cầu bắt buộc để ghi nhận log cho CloudFront</a>.</p>
 </div>
@@ -610,7 +610,7 @@
 <ul>
 <li>Tại mục <strong>Source</strong> Chọn <strong>Direct PUT</strong>.</li>
 <li>Tại mục <strong>Destination</strong> Chọn <strong>Amazon S3</strong>.
-<img src="/images/3-useawswaf/3.5-logging/logging-002.png?featherlight=false&amp;width=90pc" alt="Create Kinesis Data Firehose"></li>
+<img alt="Create Kinesis Data Firehose" src="/images/3-useawswaf/3.5-logging/logging-002.png?featherlight=false&width=90pc"></li>
 </ul>
 <ol start="3">
 <li>Tại mục <strong>Choose source and destination</strong> điền <code>aws-waf-logs-workshop-26</code>.
@@ -618,26 +618,26 @@
 <div class="notices note" ><p>Tên của Kinesis Data Firehose sẽ bắt đầu với <code>aws-waf-logs-workshop-</code>. Đây là yêu cầu bắt buộc của dịch vụ WAF.</p>
 </div>
 
-<img src="/images/3-useawswaf/3.5-logging/logging-003.png?featherlight=false&amp;width=90pc" alt="Create Kinesis Data Firehose"></li>
+<img alt="Create Kinesis Data Firehose" src="/images/3-useawswaf/3.5-logging/logging-003.png?featherlight=false&width=90pc"></li>
 <li>Trong phần <strong>Destination settings</strong>.</li>
 </ol>
 <ul>
 <li>Click <strong>Browse</strong>.
-<img src="/images/3-useawswaf/3.5-logging/logging-004.png?featherlight=false&amp;width=90pc" alt="Create Kinesis Data Firehose"></li>
+<img alt="Create Kinesis Data Firehose" src="/images/3-useawswaf/3.5-logging/logging-004.png?featherlight=false&width=90pc"></li>
 <li>Chọn <strong>aws-waf-logs-001</strong>(S3 bucket đã tạo trước đó) là nơi lưu trữ đích.</li>
 <li>Click <strong>Choose</strong>.
-<img src="/images/3-useawswaf/3.5-logging/logging-005.png?featherlight=false&amp;width=90pc" alt="Create Kinesis Data Firehose"></li>
+<img alt="Create Kinesis Data Firehose" src="/images/3-useawswaf/3.5-logging/logging-005.png?featherlight=false&width=90pc"></li>
 </ul>
 <ol start="5">
 <li>Kéo màn hình xuống dưới, Click <strong>Create delivery stream</strong>.
-<img src="/images/3-useawswaf/3.5-logging/logging-006.png?featherlight=false&amp;width=90pc" alt="Create Kinesis Data Firehose"></li>
+<img alt="Create Kinesis Data Firehose" src="/images/3-useawswaf/3.5-logging/logging-006.png?featherlight=false&width=90pc"></li>
 <li>Truy cập <a href="https://console.aws.amazon.com/wafv2/homev2/start">AWS WAF Console</a>.</li>
 </ol>
 <ul>
 <li>Click <strong>Web ACLs</strong>.</li>
 <li>Chọn <strong>Global</strong>.</li>
 <li>Click <strong>waf-workshop-juice-shop</strong>.
-<img src="/images/3-useawswaf/3.5-logging/logging-007.png?featherlight=false&amp;width=90pc" alt="Use Kinesis"></li>
+<img alt="Use Kinesis" src="/images/3-useawswaf/3.5-logging/logging-007.png?featherlight=false&width=90pc"></li>
 </ul>
 <ol start="7">
 <li>Ở trang thông tin <strong>Web ACL</strong> của bạn.</li>
@@ -645,7 +645,7 @@
 <ul>
 <li>Chọn tab <strong>Logging and metrics</strong>.</li>
 <li>Click <strong>Enable</strong>.
-<img src="/images/3-useawswaf/3.5-logging/logging-008.png?featherlight=false&amp;width=90pc" alt="Use Kinesis"></li>
+<img alt="Use Kinesis" src="/images/3-useawswaf/3.5-logging/logging-008.png?featherlight=false&width=90pc"></li>
 </ul>
 <ol start="8">
 <li>Trong phần <strong>Logging destination</strong>.</li>
@@ -653,7 +653,7 @@
 <ul>
 <li>Click <strong>Kinesis Data Firehose stream</strong>.</li>
 <li>Tại mục <strong>Amazon Kinesis Data Firehose delivery stream</strong> Chọn <strong>aws-waf-logs-workshop-26</strong>.
-<img src="/images/3-useawswaf/3.5-logging/logging-009.png?featherlight=false&amp;width=90pc" alt="Use Kinesis"></li>
+<img alt="Use Kinesis" src="/images/3-useawswaf/3.5-logging/logging-009.png?featherlight=false&width=90pc"></li>
 </ul>
 <ol start="9">
 <li>Trong phần <strong>Redacted fields</strong>.</li>
@@ -663,7 +663,7 @@
 <li>Tại mục <strong>Redacted headers</strong> Click <strong>Add header</strong></li>
 <li>Thêm vào giá trị header <code>Cookie</code>.</li>
 <li>Click <strong>Save</strong>
-<img src="/images/3-useawswaf/3.5-logging/logging-010.png?featherlight=false&amp;width=90pc" alt="Use Kinesis"></li>
+<img alt="Use Kinesis" src="/images/3-useawswaf/3.5-logging/logging-010.png?featherlight=false&width=90pc"></li>
 </ul>
 <ol start="10">
 <li>Chạy lệnh</li>
@@ -671,12 +671,12 @@
 <pre tabindex="0"><code>curl &#34;&lt;Your Juice Shop URL&gt;?username=admin&#34;
 curl &#34;&lt;Your Juice Shop URL&gt;?milkshake=banana&amp;favourite-topping=sauce&#34;
 curl -H &#34;x-milkshake: chocolate&#34; &#34;&lt;Your Juice Shop URL&gt;&#34;
-</code></pre><p><img src="/images/3-useawswaf/3.5-logging/logging-011.png?width=60pc" alt="Use Kinesis">
-<img src="/images/3-useawswaf/3.5-logging/logging-012.png?width=60pc" alt="Use Kinesis">
+</code></pre><p><img alt="Use Kinesis" src="/images/3-useawswaf/3.5-logging/logging-011.png?width=60pc">
+<img alt="Use Kinesis" src="/images/3-useawswaf/3.5-logging/logging-012.png?width=60pc">
 11. Tải tập tin log ghi nhận vào S3.
-<img src="/images/3-useawswaf/3.5-logging/logging-013.png?featherlight=false&amp;width=90pc" alt="Use Kinesis">
+<img alt="Use Kinesis" src="/images/3-useawswaf/3.5-logging/logging-013.png?featherlight=false&width=90pc">
 12. Tìm từ khóa Cookie trong tập tin.
-<img src="/images/3-useawswaf/3.5-logging/logging-014.png?width=50pc" alt="Use Kinesis"></p>
+<img alt="Use Kinesis" src="/images/3-useawswaf/3.5-logging/logging-014.png?width=50pc"></p>
 <h4 id="kết-luận">Kết luận</h4>
 <p>WAF cho phép bạn ghi nhận các nhật kí request và lưu trữ trong nơi lưu trữ đích của Kinesis Data Firehose. Nhật ký cung cấp thông tin về request. Nhật ký đồng thời cung cấp hành động và rule đã tác động lên request. Thông tin này có thể không giá trị khi bạn chạy WAF. Sử dụng tính năng điều chỉnh các vùng nội dung để loại bỏ các thông tin nhạy cảm.</p>
 
@@ -927,19 +927,19 @@ curl -H &#34;x-milkshake: chocolate&#34; &#34;&lt;Your Juice Shop URL&gt;&#34;
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1705242669"></script>
-    <script src="/js/perfect-scrollbar.min.js?1705242669"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1705242669"></script>
-    <script src="/js/jquery.sticky.js?1705242669"></script>
-    <script src="/js/featherlight.min.js?1705242669"></script>
-    <script src="/js/highlight.pack.js?1705242669"></script>
+    <script src="/js/clipboard.min.js?1733798128"></script>
+    <script src="/js/perfect-scrollbar.min.js?1733798128"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1733798128"></script>
+    <script src="/js/jquery.sticky.js?1733798128"></script>
+    <script src="/js/featherlight.min.js?1733798128"></script>
+    <script src="/js/highlight.pack.js?1733798128"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1705242669"></script>
-    <script src="/js/learn.js?1705242669"></script>
-    <script src="/js/hugo-learn.js?1705242669"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1733798128"></script>
+    <script src="/js/learn.js?1733798128"></script>
+    <script src="/js/hugo-learn.js?1733798128"></script>
 
-    <link href="/mermaid/mermaid.css?1705242669" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1705242669"></script>
+    <link href="/mermaid/mermaid.css?1733798128" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1733798128"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
