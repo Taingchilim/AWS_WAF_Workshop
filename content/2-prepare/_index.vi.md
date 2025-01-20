@@ -1,15 +1,15 @@
 +++
-title = "Chuẩn bị"
+title = "ការត្រៀមរៀបចំ"
 date = 2020
 weight = 2
 chapter = false
 pre = "<b>2. </b>"
 +++
-#### Chuẩn bị Workshop
+#### ការត្រៀមរៀបចំសិក្ខាសាលា
 
-Trong phần này chúng ta sẽ thực hiện tạo môi trường cho workshop bao gồm việc tạo **S3 bucket** và triển khai một Ứng dụng mẫu.
+នៅក្នុងផ្នែកនេះ យើងនឹងបង្កើតបរិយាកាសសម្រាប់សិក្ខាសាលា រួមមានការបង្កើត **S3 bucket** និងការដាក់ឲ្យដំណើរការកម្មវិធីគំរូមួយ។
 
-#### Nội dung:
+#### មាតិកា៖
 
-1. [Tạo S3 bucket](2.1-creates3/)
-2. [Triển khai một Ứng dụng mẫu](2.2-deploythesamplewebapp/)
+1. [បង្កើត S3 bucket](2.1-creates3/)
+2. [ដាក់ឲ្យដំណើរការកម្មវិធីគំរូ](2.2-deploythesamplewebapp/)

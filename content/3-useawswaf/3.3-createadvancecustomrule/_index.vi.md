@@ -1,33 +1,35 @@
 +++
-title = "Custom Rule Nâng cao"
+title = "បង្កើត Custom Rule កម្រិតខ្ពស់"
 date = 2020
 weight = 3
 chapter = false
 pre = "<b>3.3. </b>"
 +++
 
-#### Tình huống
-Băng nhóm Sữa Lắc lại tiếp tục tấn công ứng dụng của bạn. Chúng đã thay đổi cách tấn công một lần nữa! Bạn cần phải cập nhật rule để chặn các request xấu xa này trong khi vẫn cho phép khách hàng thực sự gửi request.
 
-#### Tạo Custom Rule Nâng cao
+#### ស្ថានភាព
+ក្រុម Milkshake កំពុងបន្តវាយប្រហារកម្មវិធីរបស់អ្នក។ ពួកគេបានផ្លាស់ប្តូរវិធីវាយប្រហារម្តងទៀត! អ្នកត្រូវធ្វើបច្ចុប្បន្នភាព rule ដើម្បីទប់ស្កាត់សំណើអាក្រក់ទាំងនេះ ខណៈពេលដែលនៅតែអនុញ្ញាតឱ្យអតិថិជនពិតប្រាកដផ្ញើសំណើ។
+
+#### បង្កើត Custom Rule កម្រិតខ្ពស់
 {{% notice info %}} 
-Tất cả WAF Rule được định nghĩa là một JSON Object. Đối với các rule phức tạp, bạn sẽ dễ dàng xử lý hơn nếu làm việc trực tiếp ở định dạng JSON thay vì sử dụng Rule Editor trên console. Bạn có thể lấy các thông tin của rule hiện tại được định nghĩa bằng JSON thông qua sử dụng bằng API, CLI hoặc Console sử dụng lệnh [get-rule-group](https://docs.aws.amazon.com/cli/latest/reference/wafv2/get-rule-group.html). Chỉnh sửa chúng sử dụng trình biên soạn JSON mà bạn muốn và tải chúng lên với lệnh [update-rule-group](https://docs.aws.amazon.com/cli/latest/reference/wafv2/update-rule-group.html) sử dụng API, CLI hoặc Console.\
-Định nghĩa rule sử dụng JSON cho phép bạn áp dụng việc quản lý phiên bản nhằm dễ dàng xem xét cách thức, thời điểm và lý do một tập các rule phức tạp được thay đổi.
+WAF Rule ទាំងអស់ត្រូវបានកំណត់ជា JSON Object។ សម្រាប់ rule ស្មុគស្មាញ វាងាយស្រួលជាងក្នុងការដោះស្រាយប្រសិនបើអ្នកធ្វើការដោយផ្ទាល់ជាមួយទម្រង់ JSON ជាជាងប្រើ Rule Editor នៅលើ console។ អ្នកអាចទាញយកព័ត៌មានរបស់ rule បច្ចុប្បន្នដែលត្រូវបានកំណត់ជា JSON តាមរយៈការប្រើ API, CLI ឬ Console ដោយប្រើពាក្យបញ្ជា [get-rule-group](https://docs.aws.amazon.com/cli/latest/reference/wafv2/get-rule-group.html)។ កែសម្រួលវាដោយប្រើកម្មវិធីកែសម្រួល JSON ដែលអ្នកចង់បាន និងផ្ទុកវាឡើងដោយប្រើពាក្យបញ្ជា [update-rule-group](https://docs.aws.amazon.com/cli/latest/reference/wafv2/update-rule-group.html) ដោយប្រើ API, CLI ឬ Console។\
+ការកំណត់ rule ដោយប្រើ JSON អនុញ្ញាតឱ្យអ្នកអនុវត្តការគ្រប់គ្រងកំណែដើម្បីងាយស្រួលពិនិត្យមើលរបៀប ពេលវេលា និងមូលហេតុដែល rule ស្មុគស្មាញត្រូវបានផ្លាស់ប្តូរ។
 {{% /notice %}}
 
-Lần này, bạn sẽ khởi đầu với rule căn bản như sau:\
-Rule này sẽ chặn tất cả các request thỏa hai điều kiện:
-* Chứa header ```x-milkshake: chocolate```
-* Chứa query parameter ```milkshake=banana```
+លើកនេះ អ្នកនឹងចាប់ផ្តើមជាមួយ rule មូលដ្ឋានដូចខាងក្រោម៖\
+Rule នេះនឹងទប់ស្កាត់សំណើទាំងអស់ដែលបំពេញលក្ខខណ្ឌទាំងពីរ៖
+* មាន header ```x-milkshake: chocolate```
+* មាន query parameter ```milkshake=banana```
 
-1. Ở trang thông tin **Web ACL** của bạn.
-* Click **Rules**.
-* Click **Add Rules**.
-* Click **Add my own rules and rule groups**.
+1. នៅទំព័រព័ត៌មាន **Web ACL** របស់អ្នក។
+* ចុច **Rules**។
+* ចុច **Add Rules**។
+* ចុច **Add my own rules and rule groups**។
 ![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-001.png?featherlight=false&width=90pc)
-2. Trong phần **Rule builder**.
-* Click **Rule JSON editor**.
-* Tại mục **JSON** điền 
+
+2. នៅក្នុងផ្នែក **Rule builder**។
+* ចុច **Rule JSON editor**។
+* នៅក្នុងផ្នែក **JSON** បំពេញ 
 ```
 {
   "Name": "complex-rule-challenge",
@@ -83,23 +85,29 @@ Rule này sẽ chặn tất cả các request thỏa hai điều kiện:
 }
 ```
 ![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-002.png?featherlight=false&width=90pc)
-3. Kéo màn hình xuống dưới, Click **Add rule**.
+
+3. អូសអេក្រង់ចុះក្រោម ចុច **Add rule**។
 ![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-003.png?featherlight=false&width=90pc)
-4. Click **Save**.
+
+4. ចុច **Save**។
 ![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-004.png?featherlight=false&width=90pc)
-#### Cập nhật Rule
-Rule này sẽ chặn tất cả các request thỏa hai điều kiện:
-* Chứa header ```x-milkshake: chocolate``` và cả header ```x-favourite-topping: nuts```
-* Chứa query ```parameter milkshake=banana``` và cả query parameter ```favourite-topping=sauce```
-1. Ở trang thông tin **Web ACL** của bạn.
-* Click **Rules**.
-* Click **complex-rule-challenge**(tên rule muốn cập nhật).
+
+#### ធ្វើបច្ចុប្បន្នភាព Rule
+Rule នេះនឹងទប់ស្កាត់សំណើទាំងអស់ដែលបំពេញលក្ខខណ្ឌទាំងពីរ៖
+* មាន header ```x-milkshake: chocolate``` និង header ```x-favourite-topping: nuts```
+* មាន query parameter ```milkshake=banana``` និង query parameter ```favourite-topping=sauce```
+
+1. នៅទំព័រព័ត៌មាន **Web ACL** របស់អ្នក។
+* ចុច **Rules**។
+* ចុច **complex-rule-challenge** (ឈ្មោះ rule ដែលត្រូវធ្វើបច្ចុប្បន្នភាព)។
 ![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-005.png?featherlight=false&width=90pc)
-2. Click **Edit**.
+
+2. ចុច **Edit**។
 ![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-006.png?featherlight=false&width=90pc)
-3. Trong phần **Rule builder**.
-* Click **Rule JSON editor**.
-* Tại mục **JSON** điền 
+
+3. នៅក្នុងផ្នែក **Rule builder**។
+* ចុច **Rule JSON editor**។
+* នៅក្នុងផ្នែក **JSON** បំពេញ 
 ```
 {
   "Name": "complex-rule-challenge",
@@ -201,28 +209,32 @@ Rule này sẽ chặn tất cả các request thỏa hai điều kiện:
 }
 ```
 ![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-007.png?featherlight=false&width=90pc)
-4. Click **Save rule**.
+
+4. ចុច **Save rule**។
 ![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-008.png?featherlight=false&width=90pc)
-5. Click **Save**
+
+5. ចុច **Save**។
 ![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-009.png?featherlight=false&width=90pc)
-6. Chạy lệnh
+
+6. រត់ពាក្យបញ្ជា
 ```
-# This will be allowed
+# សំណើនេះនឹងត្រូវបានអនុញ្ញាត
 curl -H "x-milkshake: chocolate" "<Your Juice Shop URL>"
 curl  "<Your Juice Shop URL>?milkshake=banana"
 ```
 ![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-010.png?width=60pc)
 ![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-011.png?width=60pc)
-7. Chạy lệnh
+
+7. រត់ពាក្យបញ្ជា
 ```
-# This will be blocked
+# សំណើនេះនឹងត្រូវបានទប់ស្កាត់
 curl -H "x-milkshake: chocolate" -H "x-favourite-topping: nuts" "<Your Juice Shop URL>"
 curl  "<Your Juice Shop URL>?milkshake=banana&favourite-topping=sauce"
 ```
 ![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-012.png?width=60pc)
 ![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-013.png?width=60pc)
 
-Các request bị chặn sẽ có phản hồi như sau:
+សំណើដែលត្រូវបានទប់ស្កាត់នឹងមានការឆ្លើយតបដូចខាងក្រោម៖
 ```
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -237,4 +249,4 @@ Các request bị chặn sẽ có phản hồi như sau:
 </html>
 ```
 
-Ở phần này, bạn đã hiểu được cách để định nghĩa WAF rule ở định dạng JSON. Các logic phức tạp cần phải được định nghĩa sử dụng các toán tử AND, OR và NOT.
+នៅក្នុងផ្នែកនេះ អ្នកបានយល់ដឹងពីរបៀបកំណត់ WAF rule នៅក្នុងទម្រង់ JSON។ តក្កវិជ្ជាស្មុគស្មាញត្រូវតែកំណត់ដោយប្រើប្រតិបត្តិការ AND, OR និង NOT។

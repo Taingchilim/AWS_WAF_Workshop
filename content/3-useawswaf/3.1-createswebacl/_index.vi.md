@@ -1,72 +1,74 @@
 +++
-title = "Web ACLs với managed rules"
+title = "Web ACLs ជាមួយ managed rules"
 date = 2020
 weight = 1
 chapter = false
 pre = "<b>3.1. </b>"
 +++
 
-#### Tình huống
-Giả sử bạn là một lập trình viên đơn độc đang bắt đầu với cửa hàng Juice Shop (Nước Trái Cây). Website của bạn là một ứng dụng web đơn giản chạy với cơ sở dữ liệu SQL. Vì một số lý do nào đó, nhóm tin tặc Milkshake (nhóm Sữa Lắc) đang bắt đầu tấn công vào trang web của bạn.
 
-Rất may là ngay lúc này bạn đang tiếp cận tới AWS WAF. Vậy là bạn quyết định sẽ triển khai WAF để bảo vệ trang web của bạn.
+#### ស្ថានភាព
+សន្មតថាអ្នកជាអ្នកអភិវឌ្ឍន៍ម្នាក់ដែលទើបតែចាប់ផ្តើមជាមួយហាង Juice Shop (ទឹកផ្លែឈើ)។ គេហទំព័ររបស់អ្នកគឺជាកម្មវិធីវេបសាមញ្ញមួយដែលដំណើរការជាមួយមូលដ្ឋានទិន្នន័យ SQL។ ដោយសារហេតុផលមួយចំនួន ក្រុមហេកឃឺ Milkshake (ក្រុមទឹកដោះគោក្រឡុក) កំពុងចាប់ផ្តើមវាយប្រហារគេហទំព័ររបស់អ្នក។
 
-Ngoài ra thì ngay lúc này, bạn đang không có nhiều thời gian nên bạn sẽ quyết định sẽ sử dụng Nhóm các rule dựng sẵn bởi AWS cho Web ACL của bạn. Với các rule này, website của bạn sẽ được bảo vệ khỏi các tấn công thông thường từ phía nhóm Sữa Lắc.
-#### Web ACLs với managed rules
+សំណាងល្អ ពេលនេះអ្នកកំពុងចូលដំណើរការ AWS WAF។ ដូច្នេះអ្នកសម្រេចចិត្តដាក់ឲ្យដំណើរការ WAF ដើម្បីការពារគេហទំព័ររបស់អ្នក។
+
+លើសពីនេះទៀត នៅពេលនេះ អ្នកមិនមានពេលច្រើនទេ ដូច្នេះអ្នកនឹងសម្រេចចិត្តប្រើក្រុមច្បាប់ដែលបានបង្កើតឡើងដោយ AWS សម្រាប់ Web ACL របស់អ្នក។ ជាមួយនឹងច្បាប់ទាំងនេះ គេហទំព័ររបស់អ្នកនឹងត្រូវបានការពារពីការវាយប្រហារទូទៅពីក្រុម Milkshake។
+
+#### Web ACLs ជាមួយ managed rules
 
 {{% notice info %}} 
- [Web ACLs (Web Access Control List)](https://docs.aws.amazon.com/waf/latest/developerguide/web-acl.html) là cốt lỗi của việc triển khai AWS WAF. Nó bao gồm các rule được sử dụng để đánh giá các yêu cầu được gửi tới WAF của bạn. Web ACL được áp dụng lên ứng dụng web của bạn thông qua Amazon CloudFront distribution, AWS API Gateway API hay một AWS Application Load Balancer.\
-[Managed rule groups](https://docs.aws.amazon.com/waf/latest/developerguide/waf-managed-rule-groups.html) là một bộ các rule được tạo và cập nhật bởi đội ngũ AWS hoặc các bên thứ 3 trên AWS Marketplace. Những rule này cung cấp khả năng bảo vệ ứng dụng của bạn khỏi các tấn công thông dụng hoặc đặc thù cho từng loại ứng dụng.
+[Web ACLs (Web Access Control List)](https://docs.aws.amazon.com/waf/latest/developerguide/web-acl.html) គឺជាស្នូលនៃការដាក់ឲ្យដំណើរការ AWS WAF។ វារួមមានច្បាប់ដែលត្រូវបានប្រើដើម្បីវាយតម្លៃសំណើដែលត្រូវបានផ្ញើទៅ WAF របស់អ្នក។ Web ACL ត្រូវបានអនុវត្តទៅលើកម្មវិធីវេបរបស់អ្នកតាមរយៈ Amazon CloudFront distribution, AWS API Gateway API ឬ AWS Application Load Balancer។\
+[Managed rule groups](https://docs.aws.amazon.com/waf/latest/developerguide/waf-managed-rule-groups.html) គឺជាសំណុំច្បាប់ដែលត្រូវបានបង្កើត និងធ្វើបច្ចុប្បន្នភាពដោយក្រុម AWS ឬភាគីទីបីនៅលើ AWS Marketplace។ ច្បាប់ទាំងនេះផ្តល់នូវសមត្ថភាពការពារកម្មវិធីរបស់អ្នកពីការវាយប្រហារទូទៅ ឬជាក់លាក់សម្រាប់កម្មវិធីនីមួយៗ។
 {{% /notice %}}
 
-1. Truy cập [AWS WAF Console](https://console.aws.amazon.com/wafv2/homev2/start).
+1. ចូលទៅកាន់ [AWS WAF Console](https://console.aws.amazon.com/wafv2/homev2/start)។
 {{% notice note %}} 
-Bài thực hành này sử dụng phiên bản mới nhất của AWS WAF. Hãy đảm bảo bạn không sử dụng WAF Classic.
+ការអនុវត្តនេះប្រើកំណែថ្មីបំផុតនៃ AWS WAF។ សូមប្រាកដថាអ្នកមិនប្រើ WAF Classic ទេ។
 {{% /notice %}}
-* Click **Create web ACL**.
+* ចុច **Create web ACL**។
 ![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-001.png?featherlight=false&width=90pc)
-2. Trong phần **Web ACL details**.
-* Tại mục **Resource type**, Click **CloudFront distributions**.
-* Tại mục **Name** điền ```waf-workshop-juice-shop```.
-* Tại mục **Description** điền ```Web ACL for the aws-waf-workshop```.
+2. ក្នុងផ្នែក **Web ACL details**។
+* នៅផ្នែក **Resource type** ចុច **CloudFront distributions**។
+* នៅផ្នែក **Name** វាយ ```waf-workshop-juice-shop```។
+* នៅផ្នែក **Description** វាយ ```Web ACL for the aws-waf-workshop```។
 ![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-002.png?featherlight=false&width=90pc)
-3. Trong phần **Associated AWS resources**, Click **Add AWS resources**.
+3. ក្នុងផ្នែក **Associated AWS resources** ចុច **Add AWS resources**។
 ![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-003.png?featherlight=false&width=90pc)
-4. Trong phần **Add AWS resources**, Click **E24BURECS1O10C - dkievcmqb5kzc.cloudfront.net - WAF Workshop CloudFront Distribution**(CloudFront distribution chúng ta đã tạo).
-* Click **Add**.
+4. ក្នុងផ្នែក **Add AWS resources** ចុច **E24BURECS1O10C - dkievcmqb5kzc.cloudfront.net - WAF Workshop CloudFront Distribution** (CloudFront distribution ដែលយើងបានបង្កើត)។
+* ចុច **Add**។
 ![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-004.png?featherlight=false&width=90pc)
-5. Click **Next**.
+5. ចុច **Next**។
 ![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-005.png?featherlight=false&width=90pc)
-6. Trong phần **Rules**.
-* Click **Add rules**.
-* Click **Add managed rule groups**.
+6. ក្នុងផ្នែក **Rules**។
+* ចុច **Add rules**។
+* ចុច **Add managed rule groups**។
 ![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-006.png?featherlight=false&width=90pc)
-7. Tại trang **Add managed rule groups**, Click **AWS managed rule groups**.
+7. នៅទំព័រ **Add managed rule groups** ចុច **AWS managed rule groups**។
 ![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-007.png?featherlight=false&width=90pc)
-8. Chọn **Core Rule Set** và **SQL Database**.
+8. ជ្រើសរើស **Core Rule Set** និង **SQL Database**។
 ![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-008.png?featherlight=false&width=90pc)
-9. Kéo màn hình xuống dưới, Click **Add rules**.
+9. រុញអេក្រង់ចុះក្រោម ចុច **Add rules**។
 ![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-009.png?featherlight=false&width=90pc)
-10. Tại trang **Add managed rule groups**, click **Next**.
+10. នៅទំព័រ **Add managed rule groups** ចុច **Next**។
 ![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-010.png?featherlight=false&width=90pc)
-11. Tại trang **Set rule priority**, click **Next**.
+11. នៅទំព័រ **Set rule priority** ចុច **Next**។
 ![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-011.png?featherlight=false&width=90pc)
-12. Tại trang **Configure metrics**, click **Next**.
+12. នៅទំព័រ **Configure metrics** ចុច **Next**។
 ![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-012.png?featherlight=false&width=90pc)
-13. Tại trang **Review and create web ACL**, Kéo màn hình xuống dưới, click **Create web ACL**.
+13. នៅទំព័រ **Review and create web ACL** រុញអេក្រង់ចុះក្រោម ចុច **Create web ACL**។
 ![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-013.png?featherlight=false&width=90pc)
 ![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-014.png?featherlight=false&width=90pc)
-14. Chạy lệnh
+14. រត់ពាក្យបញ្ជា
 ```
-# This imitates a Cross Site Scripting attack
-# This request should be blocked.
+# វាក្លែងធ្វើជាការវាយប្រហារ Cross Site Scripting
+# សំណើនេះគួរតែត្រូវបានរារាំង។
 curl -X POST  <Your Juice Shop URL> -F "user='<script><alert>Hello></alert></script>'"
 ```
 ![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-015.png?width=60pc)
-15. Chạy lệnh.
+15. រត់ពាក្យបញ្ជា
 ```
-# This imitates a SQL Injection attack
-# This request should be blocked.
+# វាក្លែងធ្វើជាការវាយប្រហារ SQL Injection
+# សំណើនេះគួរតែត្រូវបានរារាំង។
 curl -X POST <Your Juice Shop URL> -F "user='AND 1=1;"
 ```
 ![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-016.png?width=60pc)

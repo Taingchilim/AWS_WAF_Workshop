@@ -1,15 +1,15 @@
 +++
-title = "Giới thiệu"
+title = "សេចក្តីផ្តើម"
 date = 2020
 weight = 1
 chapter = false
 pre = "<b>1. </b>"
 +++
 
-#### Giới thiệu về AWS WAF
+#### សេចក្តីផ្តើមអំពី AWS WAF
 
-**AWS WAF (AWS Web Application Firewall)** là một dịch vụ Web Application Firewall (tường lửa ứng dụng web) do Amazon Web Services cung cấp. Dịch vụ này giúp bạn bảo vệ ứng dụng web và API của bạn khỏi các cuộc tấn công từ bên ngoài có thể ảnh hưởng đến hiệu suất, an ninh thông tin, hoặc làm tiêu tốn tài nguyên hệ thống.
+**AWS WAF (AWS Web Application Firewall)** គឺជាសេវាកម្មជញ្ជាំងការពារកម្មវិធីវេប (Web Application Firewall) ដែលផ្តល់ដោយ Amazon Web Services។ សេវាកម្មនេះជួយការពារកម្មវិធីវេប និង API របស់អ្នកពីការវាយប្រហារពីខាងក្រៅដែលអាចប៉ះពាល់ដល់ប្រសិទ្ធភាព សន្តិសុខព័ត៌មាន ឬប្រើប្រាស់ធនធានប្រព័ន្ធ។
 
-Sử dụng AWS WAF là một cách hiệu quả để bảo vệ ứng dụng web của bạn. AWS WAF có khả năng giảm thiểu các mối đe dọa từ các lỗ hổng bảo mật như [SQL Injection](https://owasp.org/www-community/attacks/SQL_Injection), [Cross Site Scripting (XSS)](https://owasp.org/www-community/attacks/xss/), và các cuộc tấn công phổ biến khác được liệt kê trong Top 10 OWASP. Nó cho phép bạn tạo các luật tùy chỉnh để kiểm soát việc chặn hoặc cho phép các yêu cầu HTTP từ bên ngoài trước khi chúng tiếp cận ứng dụng của bạn.
+ការប្រើប្រាស់ AWS WAF គឺជាវិធីដ៏មានប្រសិទ្ធភាពមួយដើម្បីការពារកម្មវិធីវេបរបស់អ្នក។ AWS WAF មានសមត្ថភាពកាត់បន្ថយការគំរាមកំហែងពីចំណុចខ្សោយសន្តិសុខដូចជា [SQL Injection](https://owasp.org/www-community/attacks/SQL_Injection), [Cross Site Scripting (XSS)](https://owasp.org/www-community/attacks/xss/) និងការវាយប្រហារទូទៅផ្សេងទៀតដែលមាននៅក្នុង Top 10 OWASP។ វាអនុញ្ញាតឱ្យអ្នកបង្កើតច្បាប់ផ្ទាល់ខ្លួនដើម្បីគ្រប់គ្រងការរារាំង ឬអនុញ្ញាតសំណើ HTTP ពីខាងក្រៅមុនពេលពួកវាឈានដល់កម្មវិធីរបស់អ្នក។
 
 ![AWS WAF](/images/waficon.png)

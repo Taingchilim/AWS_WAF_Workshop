@@ -1,45 +1,55 @@
+
 +++
-title = "Dọn dẹp tài nguyên"
+title = "សម្អាតធនធាន"
 date = 2020
 weight = 4
 chapter = false
 pre = "<b>4. </b>"
 +++
-Bạn sẽ dọn dẹp tài nguyên theo thứ tự sau:
+អ្នកនឹងសម្អាតធនធានតាមលំដាប់ដូចខាងក្រោម៖
 
-#### Xóa ứng dụng web mẫu
-1. Truy cập [CloudFormation Console](https://console.aws.amazon.com/cloudformation/home).
-* Chọn **WAFWorkshopSampleWebApp**.
-* Click **Delete**.
+#### លុបកម្មវិធីគំរូនៅលើវ៉ិប
+1. ចូលទៅកាន់ [CloudFormation Console](https://console.aws.amazon.com/cloudformation/home)។
+* ជ្រើសរើស **WAFWorkshopSampleWebApp**។
+* ចុច **Delete**។
 ![Delete the sample web app](/images/4-cleanupresource/cleanupresource-001.png?featherlight=false&width=90pc)
-2. Click **Delete stack** để xóa.
+
+2. ចុច **Delete stack** ដើម្បីលុប។
 ![Delete the sample web app](/images/4-cleanupresource/cleanupresource-002.png?featherlight=false&width=90pc)
-#### Xóa Web ACL
-1. Truy cập [AWS WAF Console](https://console.aws.amazon.com/wafv2/homev2/start?region=global).
-* Click **Web ACLs**.
-* Chọn **waf-workshop-juice-shop**.
-* Click **Delete**.
+
+#### លុប Web ACL
+1. ចូលទៅកាន់ [AWS WAF Console](https://console.aws.amazon.com/wafv2/homev2/start?region=global)។
+* ចុច **Web ACLs**។
+* ជ្រើសរើស **waf-workshop-juice-shop**។
+* ចុច **Delete**។
 ![Delete Web ACL](/images/4-cleanupresource/cleanupresource-003.png?featherlight=false&width=90pc)
-2. Điền ```delete``` để xác nhận, sau đó click **Delete** để xóa.
+
+2. បំពេញ ```delete``` ដើម្បីបញ្ជាក់ បន្ទាប់មកចុច **Delete** ដើម្បីលុប។
 ![Delete Web ACL](/images/4-cleanupresource/cleanupresource-004.png?featherlight=false&width=90pc)
-#### Xóa Kinesis
-1. Truy cập [Amazon Kinesis Console](https://us-east-1.console.aws.amazon.com/kinesis/home?region=us-east-1#/home).
-* Click **Delivery streams**.
-* Chọn **aws-waf-logs-workshop-26**.
-* Click **Delete**.
+
+#### លុប Kinesis
+1. ចូលទៅកាន់ [Amazon Kinesis Console](https://us-east-1.console.aws.amazon.com/kinesis/home?region=us-east-1#/home)។
+* ចុច **Delivery streams**។
+* ជ្រើសរើស **aws-waf-logs-workshop-26**។
+* ចុច **Delete**។
 ![Delete Kinesis](/images/4-cleanupresource/cleanupresource-005.png?featherlight=false&width=90pc)
-2. Điền ```aws-waf-logs-workshop-26``` để xác nhận, sau đó click **Delete** để xóa.
+
+2. បំពេញ ```aws-waf-logs-workshop-26``` ដើម្បីបញ្ជាក់ បន្ទាប់មកចុច **Delete** ដើម្បីលុប។
 ![Delete Kinesis](/images/4-cleanupresource/cleanupresource-006.png?featherlight=false&width=90pc)
-#### Xóa S3 bucket
-1. Truy cập vào [**giao diện quản trị dịch vụ S3**](https://s3.console.aws.amazon.com/s3/).
-* Click chọn S3 bucket **aws-waf-logs-001**.
-* Click Empty.
+
+#### លុប S3 bucket
+1. ចូលទៅកាន់ [**ផ្ទាំងគ្រប់គ្រងសេវាកម្ម S3**](https://s3.console.aws.amazon.com/s3/)។
+* ចុចជ្រើសរើស S3 bucket **aws-waf-logs-001**។
+* ចុច Empty។
 ![Delete S3 bucket](/images/4-cleanupresource/cleanupresource-007.png?featherlight=false&width=90pc)
-2. Điền ```permanently delete``` để xác nhận, sau đó click **Empty** để xóa toàn bộ dữ liệu trong S3 bucket.
+
+2. បំពេញ ```permanently delete``` ដើម្បីបញ្ជាក់ បន្ទាប់មកចុច **Empty** ដើម្បីលុបទិន្នន័យទាំងអស់ក្នុង S3 bucket។
 ![Delete S3 bucket](/images/4-cleanupresource/cleanupresource-008.png?featherlight=false&width=90pc)
-* Click **Exit** để trở lại giao diện S3.
+* ចុច **Exit** ដើម្បីត្រឡប់ទៅផ្ទាំង S3 វិញ។
 ![Delete S3 bucket](/images/4-cleanupresource/cleanupresource-009.png?featherlight=false&width=90pc)
-3. Click chọn S3 bucket **aws-waf-logs-001** , sau đó click **Delete**.
+
+3. ចុចជ្រើសរើស S3 bucket **aws-waf-logs-001** បន្ទាប់មកចុច **Delete**។
 ![Delete S3 bucket](/images/4-cleanupresource/cleanupresource-010.png?featherlight=false&width=90pc)
-4. Điền tên bucket sau đó click **Delete bucket** để xóa S3 bucket.
+
+4. បំពេញឈ្មោះ bucket បន្ទាប់មកចុច **Delete bucket** ដើម្បីលុប S3 bucket។
 ![Delete S3 bucket](/images/4-cleanupresource/cleanupresource-011.png?featherlight=false&width=90pc)

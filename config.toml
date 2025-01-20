@@ -37,7 +37,7 @@ weight = 20
 [Languages.vi]
 title = "AWS WEB APPLICATION FIREWALL"
 weight = 2
-languageName = "Tiếng Việt"
+languageName = "Khmer"
 
 [[Languages.vi.menu.shortcuts]]
 name = "<i class='fab fa-aws'></i> AWS Study Group - Blog"

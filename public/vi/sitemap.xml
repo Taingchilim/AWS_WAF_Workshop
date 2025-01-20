@@ -15,17 +15,17 @@
                 href="/vi/"
                 />
   </url><url>
-    <loc>/vi/1-introduction/</loc>
+    <loc>/vi/3-useawswaf/3.1-createswebacl/</loc>
     <lastmod>1970-01-01T07:33:40+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/1-introduction/"
+                href="/3-useawswaf/3.1-createswebacl/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/1-introduction/"
+                href="/vi/3-useawswaf/3.1-createswebacl/"
                 />
   </url><url>
     <loc>/vi/2-prepare/2.1-creates3/</loc>
@@ -41,30 +41,17 @@
                 href="/vi/2-prepare/2.1-creates3/"
                 />
   </url><url>
-    <loc>/vi/3-useawswaf/3.1-createswebacl/</loc>
+    <loc>/vi/1-introduction/</loc>
     <lastmod>1970-01-01T07:33:40+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/3-useawswaf/3.1-createswebacl/"
+                href="/1-introduction/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/3-useawswaf/3.1-createswebacl/"
-                />
-  </url><url>
-    <loc>/vi/2-prepare/</loc>
-    <lastmod>1970-01-01T07:33:40+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/2-prepare/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/2-prepare/"
+                href="/vi/1-introduction/"
                 />
   </url><url>
     <loc>/vi/3-useawswaf/3.2-createcustomrule/</loc>
@@ -78,6 +65,19 @@
                 rel="alternate"
                 hreflang="vi"
                 href="/vi/3-useawswaf/3.2-createcustomrule/"
+                />
+  </url><url>
+    <loc>/vi/2-prepare/</loc>
+    <lastmod>1970-01-01T07:33:40+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/2-prepare/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/2-prepare/"
                 />
   </url><url>
     <loc>/vi/2-prepare/2.2-deploythesamplewebapp/</loc>

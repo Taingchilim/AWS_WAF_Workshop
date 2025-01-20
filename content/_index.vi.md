@@ -4,20 +4,18 @@ date = 2021
 weight = 1
 chapter = false
 +++
-
 # AWS Web Application Firewall
 
-## Tổng quan
+## ទិដ្ឋភាពទូទៅ
 
-Trong bài lab này, bạn sẽ tìm hiểu khái niệm và thực hành về **AWS Web Application Firewall**.
+នៅក្នុងមេរៀនបន្ទប់ពិសោធន៍នេះ អ្នកនឹងស្វែងយល់អំពីគំនិត និងការអនុវត្តជាក់ស្តែងនៃ **AWS Web Application Firewall**។
 
 ![AWS WAF](/images/waficon.png)
-*Hình ảnh: AWS WAF*
+*រូបភាព៖ AWS WAF*
 
-### Nội dung:
+### មាតិកា៖
 
-1. [Giới thiệu](1-introduction/)
-2. [Chuẩn bị](2-prepare/)
-3. [Sử dụng AWS WAF](3-useawswaf/)
-4. [Dọn dẹp tài nguyên](4-cleanup/)
-
+1. [សេចក្តីផ្តើម](1-introduction/)
+2. [ការត្រៀមរៀបចំ](2-prepare/)
+3. [ការប្រើប្រាស់ AWS WAF](3-useawswaf/)
+4. [ការសម្អាតធនធាន](4-cleanup/)

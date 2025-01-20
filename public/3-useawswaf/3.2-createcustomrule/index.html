@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.133.0">
+    <meta name="generator" content="Hugo 0.99.1" />
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Custom Rule :: AWS WEB APPLICATION FIREWALL</title>
 
     
-    <link href="/css/nucleus.css?1733798128" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1733798128" rel="stylesheet">
-    <link href="/css/hybrid.css?1733798128" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1733798128" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1733798128" rel="stylesheet">
-    <link href="/css/auto-complete.css?1733798128" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1733798128" rel="stylesheet">
-    <link href="/css/theme.css?1733798128" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1733798128" rel="stylesheet">
+    <link href="/css/nucleus.css?1736932106" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1736932106" rel="stylesheet">
+    <link href="/css/hybrid.css?1736932106" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1736932106" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1736932106" rel="stylesheet">
+    <link href="/css/auto-complete.css?1736932106" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1736932106" rel="stylesheet">
+    <link href="/css/theme.css?1736932106" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1736932106" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1733798128" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1736932106" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1733798128"></script>
+    <script src="/js/jquery-3.3.1.min.js?1736932106"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1733798128"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1733798128"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1736932106"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1736932106"></script>
 <script type="text/javascript">
     
-        var baseurl = "\/";
+        var baseurl = "";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1733798128"></script>
+<script type="text/javascript" src="/js/search.js?1736932106"></script>
 
     
   </div>
@@ -262,7 +262,7 @@
   
     
     <li data-nav-id="/3-useawswaf/3.2-createcustomrule/" title="Custom Rule" class="dd-item 
-        
+        parent
         active
         
         ">
@@ -451,7 +451,7 @@
                   
                     
                     
-                      <option id="vi" value="/vi/3-useawswaf/3.2-createcustomrule/">Tiếng Việt</option>
+                      <option id="vi" value="/vi/3-useawswaf/3.2-createcustomrule/">Khmer</option>
                     
                   
               
@@ -599,14 +599,14 @@
 <li>Click <strong>Rules</strong>.</li>
 <li>Click <strong>Add Rules</strong>.</li>
 <li>Click <strong>Add my own rules and rule groups</strong>.
-<img alt="Create Custom Rule" src="/images/3-useawswaf/3.2-createcustomrule/createcustomrule-001.png?featherlight=false&width=90pc"></li>
+<img src="/images/3-useawswaf/3.2-createcustomrule/createcustomrule-001.png?featherlight=false&amp;width=90pc" alt="Create Custom Rule"></li>
 </ul>
 <ol start="2">
 <li>In the <strong>Rule builder</strong> section.</li>
 </ol>
 <ul>
 <li>In the <strong>Name</strong> section, type <code>MyCustomRule-X-TomatoAttack</code>.
-<img alt="Create Custom Rule" src="/images/3-useawswaf/3.2-createcustomrule/createcustomrule-002.png?featherlight=false&width=90pc"></li>
+<img src="/images/3-useawswaf/3.2-createcustomrule/createcustomrule-002.png?featherlight=false&amp;width=90pc" alt="Create Custom Rule"></li>
 </ul>
 <ol start="3">
 <li>In the <strong>Statement</strong> section.</li>
@@ -616,7 +616,7 @@
 <li>In the <strong>Header field name</strong> section, type <code>X-TomatoAttack</code>.</li>
 <li>In the <strong>Match type</strong> section, Select <strong>Size greater than or equal to</strong>.</li>
 <li>In the <strong>Size in bytes</strong> section, type <code>0</code>.
-<img alt="Create Custom Rule" src="/images/3-useawswaf/3.2-createcustomrule/createcustomrule-003.png?featherlight=false&width=90pc"></li>
+<img src="/images/3-useawswaf/3.2-createcustomrule/createcustomrule-003.png?featherlight=false&amp;width=90pc" alt="Create Custom Rule"></li>
 </ul>
 <ol start="4">
 <li>In the <strong>Action</strong> section.</li>
@@ -624,12 +624,12 @@
 <ul>
 <li>In the <strong>Action</strong> section, Click <strong>Block</strong>.</li>
 <li>Click <strong>Add rule</strong>.
-<img alt="Create Custom Rule" src="/images/3-useawswaf/3.2-createcustomrule/createcustomrule-004.png?featherlight=false&width=90pc"></li>
+<img src="/images/3-useawswaf/3.2-createcustomrule/createcustomrule-004.png?featherlight=false&amp;width=90pc" alt="Create Custom Rule"></li>
 </ul>
 <ol start="5">
 <li>Click <strong>Save</strong>.
-<img alt="Create Custom Rule" src="/images/3-useawswaf/3.2-createcustomrule/createcustomrule-005.png?featherlight=false&width=90pc">
-<img alt="Create Custom Rule" src="/images/3-useawswaf/3.2-createcustomrule/createcustomrule-006.png?featherlight=false&width=90pc">
+<img src="/images/3-useawswaf/3.2-createcustomrule/createcustomrule-005.png?featherlight=false&amp;width=90pc" alt="Create Custom Rule">
+<img src="/images/3-useawswaf/3.2-createcustomrule/createcustomrule-006.png?featherlight=false&amp;width=90pc" alt="Create Custom Rule">
 
 <div class="notices info" ><p>You could also achieve the same goal using a <a href="https://docs.aws.amazon.com/waf/latest/developerguide/waf-rule-statement-type-regex-pattern-set-match">regular expression</a>.</p>
 </div>
@@ -638,16 +638,16 @@
 </ol>
 <pre tabindex="0"><code># This will be blocked
 curl -H &#34;X-TomatoAttack: Red&#34; &#34;&lt;Your Juice Shop URL&gt;&#34;
-</code></pre><p><img alt="Create Custom Rule" src="/images/3-useawswaf/3.2-createcustomrule/createcustomrule-007.png?width=60pc">
+</code></pre><p><img src="/images/3-useawswaf/3.2-createcustomrule/createcustomrule-007.png?width=60pc" alt="Create Custom Rule">
 7. Run command.</p>
 <pre tabindex="0"><code># This will be blocked
 curl -H &#34;X-TomatoAttack: Green&#34; &#34;&lt;Your Juice Shop URL&gt;&#34;
-</code></pre><p><img alt="Create Custom Rule" src="/images/3-useawswaf/3.2-createcustomrule/createcustomrule-008.png?width=60pc">
+</code></pre><p><img src="/images/3-useawswaf/3.2-createcustomrule/createcustomrule-008.png?width=60pc" alt="Create Custom Rule">
 8. In the detail of <strong>Web ACL</strong> page.</p>
 <ul>
 <li>Click <strong>Overview</strong>.</li>
 <li>Drag the screen down, in the <strong>Sampled requests</strong> section, You will see these requests marked as <strong>BLOCK</strong>.
-<img alt="Create Custom Rule" src="/images/3-useawswaf/3.2-createcustomrule/createcustomrule-009.png?featherlight=false&width=90pc"></li>
+<img src="/images/3-useawswaf/3.2-createcustomrule/createcustomrule-009.png?featherlight=false&amp;width=90pc" alt="Create Custom Rule"></li>
 </ul>
 
 
@@ -897,19 +897,19 @@ curl -H &#34;X-TomatoAttack: Green&#34; &#34;&lt;Your Juice Shop URL&gt;&#34;
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1733798128"></script>
-    <script src="/js/perfect-scrollbar.min.js?1733798128"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1733798128"></script>
-    <script src="/js/jquery.sticky.js?1733798128"></script>
-    <script src="/js/featherlight.min.js?1733798128"></script>
-    <script src="/js/highlight.pack.js?1733798128"></script>
+    <script src="/js/clipboard.min.js?1736932106"></script>
+    <script src="/js/perfect-scrollbar.min.js?1736932106"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1736932106"></script>
+    <script src="/js/jquery.sticky.js?1736932106"></script>
+    <script src="/js/featherlight.min.js?1736932106"></script>
+    <script src="/js/highlight.pack.js?1736932106"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1733798128"></script>
-    <script src="/js/learn.js?1733798128"></script>
-    <script src="/js/hugo-learn.js?1733798128"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1736932106"></script>
+    <script src="/js/learn.js?1736932106"></script>
+    <script src="/js/hugo-learn.js?1736932106"></script>
 
-    <link href="/mermaid/mermaid.css?1733798128" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1733798128"></script>
+    <link href="/mermaid/mermaid.css?1736932106" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1736932106"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
