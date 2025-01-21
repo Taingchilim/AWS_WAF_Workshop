@@ -12,6 +12,4 @@ pre = "<b>1. </b>"
 
 ការប្រើប្រាស់ AWS WAF គឺជាវិធីដ៏មានប្រសិទ្ធភាពមួយដើម្បីការពារកម្មវិធីវេបរបស់អ្នក។ AWS WAF មានសមត្ថភាពកាត់បន្ថយការគំរាមកំហែងពីចំណុចខ្សោយសន្តិសុខដូចជា [SQL Injection](https://owasp.org/www-community/attacks/SQL_Injection), [Cross Site Scripting (XSS)](https://owasp.org/www-community/attacks/xss/) និងការវាយប្រហារទូទៅផ្សេងទៀតដែលមាននៅក្នុង Top 10 OWASP។ វាអនុញ្ញាតឱ្យអ្នកបង្កើតច្បាប់ផ្ទាល់ខ្លួនដើម្បីគ្រប់គ្រងការរារាំង ឬអនុញ្ញាតសំណើ HTTP ពីខាងក្រៅមុនពេលពួកវាឈានដល់កម្មវិធីរបស់អ្នក។
 
-<figure>
-  <img src="/public/images/waficon.png" alt="AWS WAF" style="width:200px">
-</figure>
+![AWS WAF](/public/images/waficon.png)
