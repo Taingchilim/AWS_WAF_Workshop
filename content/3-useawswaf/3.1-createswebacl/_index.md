@@ -23,50 +23,50 @@ At this time, you don’t have much time, so you decide to deploy two AWS Manage
 This workshop uses the latest version of AWS WAF. Make sure you do not use WAF Classic.
 {{% /notice %}}
 * Click **Create web ACL**.
-![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-001.png?featherlight=false&width=90pc)
+![Create Web ACL](/public/images/3-useawswaf/3.1-createwebacl/createwebacl-001.png?featherlight=false&width=90pc)
 2. In the **Web ACL details** section.
 * In the **Resource type** section, Click **CloudFront distributions**.
 * In the **Name** section type ```waf-workshop-juice-shop```.
 * In the **Description** section type ```Web ACL for the aws-waf-workshop```.
-![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-002.png?featherlight=false&width=90pc)
+![Create Web ACL](/public/images/3-useawswaf/3.1-createwebacl/createwebacl-002.png?featherlight=false&width=90pc)
 3. In the **Associated AWS resources** section, Click **Add AWS resources**.
-![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-003.png?featherlight=false&width=90pc)
+![Create Web ACL](/public/images/3-useawswaf/3.1-createwebacl/createwebacl-003.png?featherlight=false&width=90pc)
 4. In the **Add AWS resources** section, Click **E24BURECS1O10C - dkievcmqb5kzc.cloudfront.net - WAF Workshop CloudFront Distribution**(CloudFront distribution we created).
 * Click **Add**.
-![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-004.png?featherlight=false&width=90pc)
+![Create Web ACL](/public/images/3-useawswaf/3.1-createwebacl/createwebacl-004.png?featherlight=false&width=90pc)
 5. Click **Next**.
-![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-005.png?featherlight=false&width=90pc)
+![Create Web ACL](/public/images/3-useawswaf/3.1-createwebacl/createwebacl-005.png?featherlight=false&width=90pc)
 6. In the **Rules** section.
 * Click **Add rules**.
 * Click **Add managed rule groups**.
-![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-006.png?featherlight=false&width=90pc)
+![Create Web ACL](/public/images/3-useawswaf/3.1-createwebacl/createwebacl-006.png?featherlight=false&width=90pc)
 7. In the **Add managed rule groups** page, Click **AWS managed rule groups**.
-![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-007.png?featherlight=false&width=90pc)
+![Create Web ACL](/public/images/3-useawswaf/3.1-createwebacl/createwebacl-007.png?featherlight=false&width=90pc)
 8. Select **Core Rule Set** and **SQL Database**.
-![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-008.png?featherlight=false&width=90pc)
+![Create Web ACL](/public/images/3-useawswaf/3.1-createwebacl/createwebacl-008.png?featherlight=false&width=90pc)
 9. Drag the screen down, Click **Add rules**.
-![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-009.png?featherlight=false&width=90pc)
+![Create Web ACL](/public/images/3-useawswaf/3.1-createwebacl/createwebacl-009.png?featherlight=false&width=90pc)
 10. In the **Add managed rule groups** page, click **Next**.
-![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-010.png?featherlight=false&width=90pc)
+![Create Web ACL](/public/images/3-useawswaf/3.1-createwebacl/createwebacl-010.png?featherlight=false&width=90pc)
 11. In the **Set rule priority** page, click **Next**.
-![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-011.png?featherlight=false&width=90pc)
+![Create Web ACL](/public/images/3-useawswaf/3.1-createwebacl/createwebacl-011.png?featherlight=false&width=90pc)
 12. In the **Configure metrics** page, click **Next**.
-![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-012.png?featherlight=false&width=90pc)
+![Create Web ACL](/public/images/3-useawswaf/3.1-createwebacl/createwebacl-012.png?featherlight=false&width=90pc)
 13. In the **Review and create web ACL** page, Drag the screen down, click **Create web ACL**.
-![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-013.png?featherlight=false&width=90pc)
-![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-014.png?featherlight=false&width=90pc)
+![Create Web ACL](/public/images/3-useawswaf/3.1-createwebacl/createwebacl-013.png?featherlight=false&width=90pc)
+![Create Web ACL](/public/images/3-useawswaf/3.1-createwebacl/createwebacl-014.png?featherlight=false&width=90pc)
 14. Run command
 ```
 # This imitates a Cross Site Scripting attack
 # This request should be blocked.
 curl -X POST  <Your Juice Shop URL> -F "user='<script><alert>Hello></alert></script>'"
 ```
-![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-015.png?width=60pc)
+![Create Web ACL](/public/images/3-useawswaf/3.1-createwebacl/createwebacl-015.png?width=60pc)
 15. Run command
 ```
 # This imitates a SQL Injection attack
 # This request should be blocked.
 curl -X POST <Your Juice Shop URL> -F "user='AND 1=1;"
 ```
-![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-016.png?width=60pc)
+![Create Web ACL](/public/images/3-useawswaf/3.1-createwebacl/createwebacl-016.png?width=60pc)
 

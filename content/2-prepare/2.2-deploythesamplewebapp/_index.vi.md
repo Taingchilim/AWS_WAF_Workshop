@@ -16,23 +16,23 @@ pre = "<b>2.2. </b>"
 
 | Region &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Launch Template                                                                                                                                                                                                                                                                                             |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| US East (N. Virginia) (us-east-1)                                                                                                                                                                                                                               | [![Deploy to aws](/images/deploytoaws.png?width=10pc)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=WAFWorkshopSampleWebApp&templateURL=https%3a%2f%2faws-waf-workshop-v2-us-east-1.s3.us-east-1.amazonaws.com%2faws-waf-v2-workshop%2flatest%2fmain.template) |
-| US East (Ohio) (us-east-2)                                                                                                                                                                                                                                      | [![Deploy to aws](/images/deploytoaws.png?width=10pc)](https://console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks/new?stackName=WAFWorkshopSampleWebApp&templateURL=https%3a%2f%2faws-waf-workshop-v2-us-east-2.s3.us-east-2.amazonaws.com%2faws-waf-v2-workshop%2flatest%2fmain.template) |
-| US West(Oregon) (us-west-2)                                                                                                                                                                                                                                     | [![Deploy to aws](/images/deploytoaws.png?width=10pc)](https://console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks/new?stackName=WAFWorkshopSampleWebApp&templateURL=https%3a%2f%2faws-waf-workshop-v2-us-west-2.s3.us-west-2.amazonaws.com%2faws-waf-v2-workshop%2flatest%2fmain.template) |
-| EU (Ireland) (eu-west-1)                                                                                                                                                                                                                                        | [![Deploy to aws](/images/deploytoaws.png?width=10pc)](https://console.aws.amazon.com/cloudformation/home?region=eu-west-1#/stacks/new?stackName=WAFWorkshopSampleWebApp&templateURL=https%3a%2f%2faws-waf-workshop-v2-eu-west-1.s3.eu-west-1.amazonaws.com%2faws-waf-v2-workshop%2flatest%2fmain.template) |
-| EU (London) (eu-west-2)                                                                                                                                                                                                                                         | [![Deploy to aws](/images/deploytoaws.png?width=10pc)](https://console.aws.amazon.com/cloudformation/home?region=eu-west-2#/stacks/new?stackName=WAFWorkshopSampleWebApp&templateURL=https%3a%2f%2faws-waf-workshop-v2-eu-west-2.s3.eu-west-2.amazonaws.com%2faws-waf-v2-workshop%2flatest%2fmain.template) |
+| US East (N. Virginia) (us-east-1)                                                                                                                                                                                                                               | [![Deploy to aws](/public/images/deploytoaws.png?width=10pc)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=WAFWorkshopSampleWebApp&templateURL=https%3a%2f%2faws-waf-workshop-v2-us-east-1.s3.us-east-1.amazonaws.com%2faws-waf-v2-workshop%2flatest%2fmain.template) |
+| US East (Ohio) (us-east-2)                                                                                                                                                                                                                                      | [![Deploy to aws](/public/images/deploytoaws.png?width=10pc)](https://console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks/new?stackName=WAFWorkshopSampleWebApp&templateURL=https%3a%2f%2faws-waf-workshop-v2-us-east-2.s3.us-east-2.amazonaws.com%2faws-waf-v2-workshop%2flatest%2fmain.template) |
+| US West(Oregon) (us-west-2)                                                                                                                                                                                                                                     | [![Deploy to aws](/public/images/deploytoaws.png?width=10pc)](https://console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks/new?stackName=WAFWorkshopSampleWebApp&templateURL=https%3a%2f%2faws-waf-workshop-v2-us-west-2.s3.us-west-2.amazonaws.com%2faws-waf-v2-workshop%2flatest%2fmain.template) |
+| EU (Ireland) (eu-west-1)                                                                                                                                                                                                                                        | [![Deploy to aws](/public/images/deploytoaws.png?width=10pc)](https://console.aws.amazon.com/cloudformation/home?region=eu-west-1#/stacks/new?stackName=WAFWorkshopSampleWebApp&templateURL=https%3a%2f%2faws-waf-workshop-v2-eu-west-1.s3.eu-west-1.amazonaws.com%2faws-waf-v2-workshop%2flatest%2fmain.template) |
+| EU (London) (eu-west-2)                                                                                                                                                                                                                                         | [![Deploy to aws](/public/images/deploytoaws.png?width=10pc)](https://console.aws.amazon.com/cloudformation/home?region=eu-west-2#/stacks/new?stackName=WAFWorkshopSampleWebApp&templateURL=https%3a%2f%2faws-waf-workshop-v2-eu-west-2.s3.eu-west-2.amazonaws.com%2faws-waf-v2-workshop%2flatest%2fmain.template) |
 
 2. ចុច **Next**។
 
-![Create the sample web app](/images/2-prepare/2.2-createthesamplewebapp/createthesamplewebapp-001.png?featherlight=false&width=90pc)
+![Create the sample web app](/public/images/2-prepare/2.2-createthesamplewebapp/createthesamplewebapp-001.png?featherlight=false&width=90pc)
 
 3. នៅទំព័រ **Specify stack details** ចុច **Next**។
 
-![Create the sample web app](/images/2-prepare/2.2-createthesamplewebapp/createthesamplewebapp-002.png?featherlight=false&width=90pc)
+![Create the sample web app](/public/images/2-prepare/2.2-createthesamplewebapp/createthesamplewebapp-002.png?featherlight=false&width=90pc)
 
 4. នៅទំព័រ **Configure stack options** ចុច **Next**។
 
-![Create the sample web app](/images/2-prepare/2.2-createthesamplewebapp/createthesamplewebapp-003.png?featherlight=false&width=90pc)
+![Create the sample web app](/public/images/2-prepare/2.2-createthesamplewebapp/createthesamplewebapp-003.png?featherlight=false&width=90pc)
 
 5. នៅទំព័រ **Review WAFWorkshopSampleWebApp**:
    - រុញអេក្រង់ចុះក្រោម។
@@ -40,13 +40,13 @@ pre = "<b>2.2. </b>"
    - ចុច **I acknowledge that AWS CloudFormation might require the following capability: CAPABILITY_AUTO_EXPAND**។
    - ចុច **Create stack**។
 
-![Create the sample web app](/images/2-prepare/2.2-createthesamplewebapp/createthesamplewebapp-004.png?featherlight=false&width=90pc)
+![Create the sample web app](/public/images/2-prepare/2.2-createthesamplewebapp/createthesamplewebapp-004.png?featherlight=false&width=90pc)
 
 **ចំណាំ៖** CloudFormation នឹងត្រូវការប្រហែល 5 នាទី ដើម្បីដាក់ឲ្យដំណើរការកម្មវិធី Juice Shop។ សូមរង់ចាំរហូតដល់ stack ទាំងអស់ស្ថិតក្នុងស្ថានភាព **CREATE_COMPLETE**។
 
-![Create the sample web app](/images/2-prepare/2.2-createthesamplewebapp/createthesamplewebapp-005.png?featherlight=false&width=90pc)
+![Create the sample web app](/public/images/2-prepare/2.2-createthesamplewebapp/createthesamplewebapp-005.png?featherlight=false&width=90pc)
 
 6. ចុច **Output** ចុច **dkievcmqb5kzc.cloudfront.net** (អាសយដ្ឋានគេហទំព័រ Juice Shop) ដើម្បីចូលមើលកម្មវិធីរបស់អ្នក។
 
-![Create the sample web app](/images/2-prepare/2.2-createthesamplewebapp/createthesamplewebapp-006.png?featherlight=false&width=90pc)
-![Create the sample web app](/images/2-prepare/2.2-createthesamplewebapp/createthesamplewebapp-007.png?featherlight=false&width=90pc)
+![Create the sample web app](/public/images/2-prepare/2.2-createthesamplewebapp/createthesamplewebapp-006.png?featherlight=false&width=90pc)
+![Create the sample web app](/public/images/2-prepare/2.2-createthesamplewebapp/createthesamplewebapp-007.png?featherlight=false&width=90pc)

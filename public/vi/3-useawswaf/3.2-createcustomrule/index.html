@@ -7,7 +7,7 @@
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
-    <link rel="icon" href="/images/favicon.png" type="image/png">
+    <link rel="icon" href="/public/images/favicon.png" type="image/png">
 
     <title>Custom Rule :: AWS WEB APPLICATION FIREWALL</title>
 
@@ -600,14 +600,14 @@
 <li>ចុច <strong>Rules</strong>។</li>
 <li>ចុច <strong>Add Rules</strong>។</li>
 <li>ចុច <strong>Add my own rules and rule groups</strong>។
-<img src="/images/3-useawswaf/3.2-createcustomrule/createcustomrule-001.png?featherlight=false&amp;width=90pc" alt="Create Custom Rule"></li>
+<img src="/public/images/3-useawswaf/3.2-createcustomrule/createcustomrule-001.png?featherlight=false&amp;width=90pc" alt="Create Custom Rule"></li>
 </ul>
 <ol start="2">
 <li>ក្នុងផ្នែក <strong>Rule builder</strong>។</li>
 </ol>
 <ul>
 <li>នៅផ្នែក <strong>Name</strong> វាយ <code>MyCustomRule-X-TomatoAttack</code>។
-<img src="/images/3-useawswaf/3.2-createcustomrule/createcustomrule-002.png?featherlight=false&amp;width=90pc" alt="Create Custom Rule"></li>
+<img src="/public/images/3-useawswaf/3.2-createcustomrule/createcustomrule-002.png?featherlight=false&amp;width=90pc" alt="Create Custom Rule"></li>
 </ul>
 <ol start="3">
 <li>ក្នុងផ្នែក <strong>Statement</strong>។</li>
@@ -617,7 +617,7 @@
 <li>នៅផ្នែក <strong>Header field name</strong> វាយ <code>X-TomatoAttack</code>។</li>
 <li>នៅផ្នែក <strong>Match type</strong> ជ្រើសរើស <strong>Size greater than or equal to</strong>។</li>
 <li>នៅផ្នែក <strong>Size in bytes</strong> វាយ <code>0</code>។
-<img src="/images/3-useawswaf/3.2-createcustomrule/createcustomrule-003.png?featherlight=false&amp;width=90pc" alt="Create Custom Rule"></li>
+<img src="/public/images/3-useawswaf/3.2-createcustomrule/createcustomrule-003.png?featherlight=false&amp;width=90pc" alt="Create Custom Rule"></li>
 </ul>
 <ol start="4">
 <li>ក្នុងផ្នែក <strong>Action</strong>។</li>
@@ -625,12 +625,12 @@
 <ul>
 <li>នៅផ្នែក <strong>Action</strong> ចុច <strong>Block</strong>។</li>
 <li>ចុច <strong>Add rule</strong>។
-<img src="/images/3-useawswaf/3.2-createcustomrule/createcustomrule-004.png?featherlight=false&amp;width=90pc" alt="Create Custom Rule"></li>
+<img src="/public/images/3-useawswaf/3.2-createcustomrule/createcustomrule-004.png?featherlight=false&amp;width=90pc" alt="Create Custom Rule"></li>
 </ul>
 <ol start="5">
 <li>ចុច <strong>Save</strong>។
-<img src="/images/3-useawswaf/3.2-createcustomrule/createcustomrule-005.png?featherlight=false&amp;width=90pc" alt="Create Custom Rule">
-<img src="/images/3-useawswaf/3.2-createcustomrule/createcustomrule-006.png?featherlight=false&amp;width=90pc" alt="Create Custom Rule"></li>
+<img src="/public/images/3-useawswaf/3.2-createcustomrule/createcustomrule-005.png?featherlight=false&amp;width=90pc" alt="Create Custom Rule">
+<img src="/public/images/3-useawswaf/3.2-createcustomrule/createcustomrule-006.png?featherlight=false&amp;width=90pc" alt="Create Custom Rule"></li>
 </ol>
 
 <div class="notices info" ><p>អ្នកអាចទទួលបានលទ្ធផលដូចគ្នាប្រសិនបើប្រើ <a href="https://docs.aws.amazon.com/waf/latest/developerguide/waf-rule-statement-type-regex-pattern-set-match.html">regular expression</a></p>
@@ -641,20 +641,20 @@
 </ol>
 <pre tabindex="0"><code># នេះនឹងត្រូវបានរារាំង
 curl -H &#34;X-TomatoAttack: Red&#34; &#34;&lt;Your Juice Shop URL&gt;&#34;
-</code></pre><p><img src="/images/3-useawswaf/3.2-createcustomrule/createcustomrule-007.png?width=60pc" alt="Create Custom Rule"></p>
+</code></pre><p><img src="/public/images/3-useawswaf/3.2-createcustomrule/createcustomrule-007.png?width=60pc" alt="Create Custom Rule"></p>
 <ol start="7">
 <li>រត់ពាក្យបញ្ជា។</li>
 </ol>
 <pre tabindex="0"><code># នេះនឹងត្រូវបានរារាំង
 curl -H &#34;X-TomatoAttack: Green&#34; &#34;&lt;Your Juice Shop URL&gt;&#34;
-</code></pre><p><img src="/images/3-useawswaf/3.2-createcustomrule/createcustomrule-008.png?width=60pc" alt="Create Custom Rule"></p>
+</code></pre><p><img src="/public/images/3-useawswaf/3.2-createcustomrule/createcustomrule-008.png?width=60pc" alt="Create Custom Rule"></p>
 <ol start="8">
 <li>នៅទំព័រព័ត៌មាន <strong>Web ACL</strong> របស់អ្នក។</li>
 </ol>
 <ul>
 <li>ចុច <strong>Overview</strong>។</li>
 <li>រុញអេក្រង់ចុះក្រោមទៅផ្នែក <strong>Sampled requests</strong> អ្នកនឹងឃើញសំណើដែលទទួលបានមានស្ថានភាព <strong>BLOCK</strong>។
-<img src="/images/3-useawswaf/3.2-createcustomrule/createcustomrule-009.png?featherlight=false&amp;width=90pc" alt="Create Custom Rule"></li>
+<img src="/public/images/3-useawswaf/3.2-createcustomrule/createcustomrule-009.png?featherlight=false&amp;width=90pc" alt="Create Custom Rule"></li>
 </ul>
 
 

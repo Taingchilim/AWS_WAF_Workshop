@@ -7,7 +7,7 @@
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
-    <link rel="icon" href="/images/favicon.png" type="image/png">
+    <link rel="icon" href="/public/images/favicon.png" type="image/png">
 
     <title>សាកល្បង Rule ថ្មី :: AWS WEB APPLICATION FIREWALL</title>
 
@@ -627,25 +627,25 @@
     }
   }
 }
-</code></pre><p><img src="/images/3-useawswaf/3.4-testingnewrule/createadvancecustomrule-001.png?featherlight=false&amp;width=90pc" alt="Testing new rule">
-<img src="/images/3-useawswaf/3.4-testingnewrule/createadvancecustomrule-002.png?featherlight=false&amp;width=90pc" alt="Testing new rule">
-<img src="/images/3-useawswaf/3.4-testingnewrule/createadvancecustomrule-003.png?featherlight=false&amp;width=90pc" alt="Testing new rule">
-<img src="/images/3-useawswaf/3.4-testingnewrule/createadvancecustomrule-004.png?featherlight=false&amp;width=90pc" alt="Testing new rule"></p>
+</code></pre><p><img src="/public/images/3-useawswaf/3.4-testingnewrule/createadvancecustomrule-001.png?featherlight=false&amp;width=90pc" alt="Testing new rule">
+<img src="/public/images/3-useawswaf/3.4-testingnewrule/createadvancecustomrule-002.png?featherlight=false&amp;width=90pc" alt="Testing new rule">
+<img src="/public/images/3-useawswaf/3.4-testingnewrule/createadvancecustomrule-003.png?featherlight=false&amp;width=90pc" alt="Testing new rule">
+<img src="/public/images/3-useawswaf/3.4-testingnewrule/createadvancecustomrule-004.png?featherlight=false&amp;width=90pc" alt="Testing new rule"></p>
 <ol start="2">
 <li>រត់ពាក្យបញ្ជា។</li>
 </ol>
 <pre tabindex="0"><code>curl &#34;&lt;Your Juice Shop URL&gt;?username=admin&#34;
-</code></pre><p><img src="/images/3-useawswaf/3.4-testingnewrule/testingnewrule-001.png?width=60pc" alt="Testing new rule"></p>
+</code></pre><p><img src="/public/images/3-useawswaf/3.4-testingnewrule/testingnewrule-001.png?width=60pc" alt="Testing new rule"></p>
 <ol start="3">
 <li>ចូលទៅកាន់ទំព័រ <a href="https://console.aws.amazon.com/cloudwatch/home?#metricsV2:graph=~()">CloudWatch Metrics</a>។</li>
 </ol>
 <ul>
 <li>ចុច <strong>WAFv2</strong>
-<img src="/images/3-useawswaf/3.4-testingnewrule/testingnewrule-002.png?featherlight=false&amp;width=90pc" alt="Testing new rule"></li>
+<img src="/public/images/3-useawswaf/3.4-testingnewrule/testingnewrule-002.png?featherlight=false&amp;width=90pc" alt="Testing new rule"></li>
 <li>ចុច <strong>Rule, WebACL</strong>
-<img src="/images/3-useawswaf/3.4-testingnewrule/testingnewrule-003.png?featherlight=false&amp;width=90pc" alt="Testing new rule"></li>
+<img src="/public/images/3-useawswaf/3.4-testingnewrule/testingnewrule-003.png?featherlight=false&amp;width=90pc" alt="Testing new rule"></li>
 <li>ជ្រើសរើស <strong>count-von-count</strong>, យើងនឹងឃើញសំណើ 1 នៅក្នុងផ្នែក <strong>Untitled graph</strong>។
-<img src="/images/3-useawswaf/3.4-testingnewrule/testingnewrule-004.png?featherlight=false&amp;width=90pc" alt="Testing new rule"></li>
+<img src="/public/images/3-useawswaf/3.4-testingnewrule/testingnewrule-004.png?featherlight=false&amp;width=90pc" alt="Testing new rule"></li>
 </ul>
 <p>មុនពេលដាក់ឱ្យប្រើប្រាស់ rule ថ្មីទៅក្នុង Web ACL របស់អ្នក សូមសាកល្បងវា។ សាកល្បង rule ថ្មីជាមួយសកម្មភាព Count និងតាមដានវាតាមរយៈ CloudWatch metrics។</p>
 

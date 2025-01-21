@@ -10,7 +10,7 @@ chapter = false
 
 នៅក្នុងមេរៀនបន្ទប់ពិសោធន៍នេះ អ្នកនឹងស្វែងយល់អំពីគំនិត និងការអនុវត្តជាក់ស្តែងនៃ **AWS Web Application Firewall**។
 
-![AWS WAF](/images/waficon.png)
+![AWS WAF](/public/images/waficon.png)
 *រូបភាព៖ AWS WAF*
 
 ### មាតិកា៖

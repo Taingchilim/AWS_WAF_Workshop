@@ -7,7 +7,7 @@
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
-    <link rel="icon" href="/images/favicon.png" type="image/png">
+    <link rel="icon" href="/public/images/favicon.png" type="image/png">
 
     <title>Testing New Rules  :: AWS WEB APPLICATION FIREWALL</title>
 
@@ -627,23 +627,23 @@
     }
   }
 }
-</code></pre><p><img src="/images/3-useawswaf/3.4-testingnewrule/createadvancecustomrule-001.png?featherlight=false&amp;width=90pc" alt="Testing new rule">
-<img src="/images/3-useawswaf/3.4-testingnewrule/createadvancecustomrule-002.png?featherlight=false&amp;width=90pc" alt="Testing new rule">
-<img src="/images/3-useawswaf/3.4-testingnewrule/createadvancecustomrule-003.png?featherlight=false&amp;width=90pc" alt="Testing new rule">
-<img src="/images/3-useawswaf/3.4-testingnewrule/createadvancecustomrule-004.png?featherlight=false&amp;width=90pc" alt="Testing new rule"></p>
+</code></pre><p><img src="/public/images/3-useawswaf/3.4-testingnewrule/createadvancecustomrule-001.png?featherlight=false&amp;width=90pc" alt="Testing new rule">
+<img src="/public/images/3-useawswaf/3.4-testingnewrule/createadvancecustomrule-002.png?featherlight=false&amp;width=90pc" alt="Testing new rule">
+<img src="/public/images/3-useawswaf/3.4-testingnewrule/createadvancecustomrule-003.png?featherlight=false&amp;width=90pc" alt="Testing new rule">
+<img src="/public/images/3-useawswaf/3.4-testingnewrule/createadvancecustomrule-004.png?featherlight=false&amp;width=90pc" alt="Testing new rule"></p>
 <ol start="2">
 <li>Run command</li>
 </ol>
 <pre tabindex="0"><code>curl &#34;&lt;Your Juice Shop URL&gt;?username=admin&#34;
-</code></pre><p><img src="/images/3-useawswaf/3.4-testingnewrule/testingnewrule-001.png?width=60pc" alt="Testing new rule">
+</code></pre><p><img src="/public/images/3-useawswaf/3.4-testingnewrule/testingnewrule-001.png?width=60pc" alt="Testing new rule">
 3. Go to <a href="https://console.aws.amazon.com/cloudwatch/home?#metricsV2:graph=~()">CloudWatch Metrics</a>.</p>
 <ul>
 <li>Click <strong>WAFv2</strong>
-<img src="/images/3-useawswaf/3.4-testingnewrule/testingnewrule-002.png?featherlight=false&amp;width=90pc" alt="Testing new rule"></li>
+<img src="/public/images/3-useawswaf/3.4-testingnewrule/testingnewrule-002.png?featherlight=false&amp;width=90pc" alt="Testing new rule"></li>
 <li>Click <strong>Rule, WebACL</strong>
-<img src="/images/3-useawswaf/3.4-testingnewrule/testingnewrule-003.png?featherlight=false&amp;width=90pc" alt="Testing new rule"></li>
+<img src="/public/images/3-useawswaf/3.4-testingnewrule/testingnewrule-003.png?featherlight=false&amp;width=90pc" alt="Testing new rule"></li>
 <li>Select <strong>count-von-count</strong>, We will see a request in <strong>Untitled graph</strong> section.
-<img src="/images/3-useawswaf/3.4-testingnewrule/testingnewrule-004.png?featherlight=false&amp;width=90pc" alt="Testing new rule"></li>
+<img src="/public/images/3-useawswaf/3.4-testingnewrule/testingnewrule-004.png?featherlight=false&amp;width=90pc" alt="Testing new rule"></li>
 </ul>
 <p>Before deploying a new rule, it’s vital to test it. This is to ensure you don’t accidentally block valid requests.</p>
 

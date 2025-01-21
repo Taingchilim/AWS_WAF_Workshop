@@ -7,7 +7,7 @@
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
-    <link rel="icon" href="/images/favicon.png" type="image/png">
+    <link rel="icon" href="/public/images/favicon.png" type="image/png">
 
     <title>Advanced Custom Rule :: AWS WEB APPLICATION FIREWALL</title>
 
@@ -606,7 +606,7 @@ This Rule will block any requests that either::</p>
 <li>Click <strong>Rules</strong>.</li>
 <li>Click <strong>Add Rules</strong>.</li>
 <li>Click <strong>Add my own rules and rule groups</strong>.
-<img src="/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-001.png?featherlight=false&amp;width=90pc" alt="Create Custom Rule"></li>
+<img src="/public/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-001.png?featherlight=false&amp;width=90pc" alt="Create Custom Rule"></li>
 </ul>
 <ol start="2">
 <li>In the  <strong>Rule builder</strong> section.</li>
@@ -667,11 +667,11 @@ This Rule will block any requests that either::</p>
     }
   }
 }
-</code></pre><p><img src="/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-002.png?featherlight=false&amp;width=90pc" alt="Create Custom Rule">
+</code></pre><p><img src="/public/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-002.png?featherlight=false&amp;width=90pc" alt="Create Custom Rule">
 3. Drag the screen down, Click <strong>Add rule</strong>.
-<img src="/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-003.png?featherlight=false&amp;width=90pc" alt="Create Custom Rule">
+<img src="/public/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-003.png?featherlight=false&amp;width=90pc" alt="Create Custom Rule">
 4. Click <strong>Save</strong>.
-<img src="/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-004.png?featherlight=false&amp;width=90pc" alt="Create Custom Rule"></p>
+<img src="/public/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-004.png?featherlight=false&amp;width=90pc" alt="Create Custom Rule"></p>
 <h4 id="update-the-rule">Update the Rule</h4>
 <p>This rule was working, but the attackers have adapted. Now malicious requests contain either:</p>
 <ul>
@@ -684,11 +684,11 @@ This Rule will block any requests that either::</p>
 <ul>
 <li>Click <strong>Rules</strong>.</li>
 <li>Click <strong>complex-rule-challenge</strong>(the name of the rule you want update).
-<img src="/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-005.png?featherlight=false&amp;width=90pc" alt="Create Custom Rule"></li>
+<img src="/public/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-005.png?featherlight=false&amp;width=90pc" alt="Create Custom Rule"></li>
 </ul>
 <ol start="2">
 <li>Click <strong>Edit</strong>.
-<img src="/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-006.png?featherlight=false&amp;width=90pc" alt="Create Custom Rule"></li>
+<img src="/public/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-006.png?featherlight=false&amp;width=90pc" alt="Create Custom Rule"></li>
 <li>In the <strong>Rule builder</strong> section.</li>
 </ol>
 <ul>
@@ -793,23 +793,23 @@ This Rule will block any requests that either::</p>
     }
   }
 }
-</code></pre><p><img src="/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-007.png?featherlight=false&amp;width=90pc" alt="Create Custom Rule">
+</code></pre><p><img src="/public/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-007.png?featherlight=false&amp;width=90pc" alt="Create Custom Rule">
 4. Click <strong>Save rule</strong>.
-<img src="/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-008.png?featherlight=false&amp;width=90pc" alt="Create Custom Rule">
+<img src="/public/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-008.png?featherlight=false&amp;width=90pc" alt="Create Custom Rule">
 5. Click <strong>Save</strong>
-<img src="/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-009.png?featherlight=false&amp;width=90pc" alt="Create Custom Rule">
+<img src="/public/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-009.png?featherlight=false&amp;width=90pc" alt="Create Custom Rule">
 6. Run command</p>
 <pre tabindex="0"><code># This will be allowed
 curl -H &#34;x-milkshake: chocolate&#34; &#34;&lt;Your Juice Shop URL&gt;&#34;
 curl  &#34;&lt;Your Juice Shop URL&gt;?milkshake=banana&#34;
-</code></pre><p><img src="/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-010.png?width=60pc" alt="Create Custom Rule">
-<img src="/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-011.png?width=60pc" alt="Create Custom Rule">
+</code></pre><p><img src="/public/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-010.png?width=60pc" alt="Create Custom Rule">
+<img src="/public/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-011.png?width=60pc" alt="Create Custom Rule">
 7. Run command</p>
 <pre tabindex="0"><code># This will be blocked
 curl -H &#34;x-milkshake: chocolate&#34; -H &#34;x-favourite-topping: nuts&#34; &#34;&lt;Your Juice Shop URL&gt;&#34;
 curl  &#34;&lt;Your Juice Shop URL&gt;?milkshake=banana&amp;favourite-topping=sauce&#34;
-</code></pre><p><img src="/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-012.png?width=60pc" alt="Create Custom Rule">
-<img src="/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-013.png?width=60pc" alt="Create Custom Rule"></p>
+</code></pre><p><img src="/public/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-012.png?width=60pc" alt="Create Custom Rule">
+<img src="/public/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-013.png?width=60pc" alt="Create Custom Rule"></p>
 <p>Blocked requests will give a response like below:</p>
 <pre tabindex="0"><code>&lt;!DOCTYPE html PUBLIC &#34;-//W3C//DTD HTML 4.01 Transitional//EN&#34; &#34;http://www.w3.org/TR/html4/loose.dtd&#34;&gt;
 &lt;html&gt;

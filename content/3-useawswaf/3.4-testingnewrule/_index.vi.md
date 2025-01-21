@@ -52,23 +52,23 @@ Rule ខាងក្រោមនឹងទប់ស្កាត់សំណើដ
   }
 }
 ```
-![Testing new rule](/images/3-useawswaf/3.4-testingnewrule/createadvancecustomrule-001.png?featherlight=false&width=90pc)
-![Testing new rule](/images/3-useawswaf/3.4-testingnewrule/createadvancecustomrule-002.png?featherlight=false&width=90pc)
-![Testing new rule](/images/3-useawswaf/3.4-testingnewrule/createadvancecustomrule-003.png?featherlight=false&width=90pc)
-![Testing new rule](/images/3-useawswaf/3.4-testingnewrule/createadvancecustomrule-004.png?featherlight=false&width=90pc)
+![Testing new rule](/public/images/3-useawswaf/3.4-testingnewrule/createadvancecustomrule-001.png?featherlight=false&width=90pc)
+![Testing new rule](/public/images/3-useawswaf/3.4-testingnewrule/createadvancecustomrule-002.png?featherlight=false&width=90pc)
+![Testing new rule](/public/images/3-useawswaf/3.4-testingnewrule/createadvancecustomrule-003.png?featherlight=false&width=90pc)
+![Testing new rule](/public/images/3-useawswaf/3.4-testingnewrule/createadvancecustomrule-004.png?featherlight=false&width=90pc)
 
 2. រត់ពាក្យបញ្ជា។
 ```
 curl "<Your Juice Shop URL>?username=admin"
 ```
-![Testing new rule](/images/3-useawswaf/3.4-testingnewrule/testingnewrule-001.png?width=60pc)
+![Testing new rule](/public/images/3-useawswaf/3.4-testingnewrule/testingnewrule-001.png?width=60pc)
 
 3. ចូលទៅកាន់ទំព័រ [CloudWatch Metrics](https://console.aws.amazon.com/cloudwatch/home?#metricsV2:graph=~())។
 * ចុច **WAFv2**
-![Testing new rule](/images/3-useawswaf/3.4-testingnewrule/testingnewrule-002.png?featherlight=false&width=90pc)
+![Testing new rule](/public/images/3-useawswaf/3.4-testingnewrule/testingnewrule-002.png?featherlight=false&width=90pc)
 * ចុច **Rule, WebACL**
-![Testing new rule](/images/3-useawswaf/3.4-testingnewrule/testingnewrule-003.png?featherlight=false&width=90pc)
+![Testing new rule](/public/images/3-useawswaf/3.4-testingnewrule/testingnewrule-003.png?featherlight=false&width=90pc)
 * ជ្រើសរើស **count-von-count**, យើងនឹងឃើញសំណើ 1 នៅក្នុងផ្នែក **Untitled graph**។
-![Testing new rule](/images/3-useawswaf/3.4-testingnewrule/testingnewrule-004.png?featherlight=false&width=90pc)
+![Testing new rule](/public/images/3-useawswaf/3.4-testingnewrule/testingnewrule-004.png?featherlight=false&width=90pc)
 
 មុនពេលដាក់ឱ្យប្រើប្រាស់ rule ថ្មីទៅក្នុង Web ACL របស់អ្នក សូមសាកល្បងវា។ សាកល្បង rule ថ្មីជាមួយសកម្មភាព Count និងតាមដានវាតាមរយៈ CloudWatch metrics។

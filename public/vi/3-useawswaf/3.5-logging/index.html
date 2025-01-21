@@ -7,7 +7,7 @@
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
-    <link rel="icon" href="/images/favicon.png" type="image/png">
+    <link rel="icon" href="/public/images/favicon.png" type="image/png">
 
     <title>កត់ត្រាសំណើ :: AWS WEB APPLICATION FIREWALL</title>
 
@@ -598,7 +598,7 @@
 <ul>
 <li>ចុច <strong>Kinesis Data Firehose</strong>។</li>
 <li>ចុច <strong>Create delivery stream</strong>។
-<img src="/images/3-useawswaf/3.5-logging/logging-001.png?featherlight=false&amp;width=90pc" alt="Create Kinesis Data Firehose"></li>
+<img src="/public/images/3-useawswaf/3.5-logging/logging-001.png?featherlight=false&amp;width=90pc" alt="Create Kinesis Data Firehose"></li>
 </ul>
 
 <div class="notices note" ><p>អ្នកត្រូវប្រាកដថាបង្កើតនៅក្នុងតំបន់ <strong>us-east-1</strong>។ <a href="https://docs.aws.amazon.com/waf/latest/developerguide/logging.html">នេះជាតម្រូវការចាំបាច់ដើម្បីកត់ត្រា log សម្រាប់ CloudFront</a>។</p>
@@ -610,7 +610,7 @@
 <ul>
 <li>នៅមុខ <strong>Source</strong> ជ្រើសរើស <strong>Direct PUT</strong>។</li>
 <li>នៅមុខ <strong>Destination</strong> ជ្រើសរើស <strong>Amazon S3</strong>។
-<img src="/images/3-useawswaf/3.5-logging/logging-002.png?featherlight=false&amp;width=90pc" alt="Create Kinesis Data Firehose"></li>
+<img src="/public/images/3-useawswaf/3.5-logging/logging-002.png?featherlight=false&amp;width=90pc" alt="Create Kinesis Data Firehose"></li>
 </ul>
 <ol start="3">
 <li>នៅមុខ <strong>Choose source and destination</strong> បំពេញ <code>aws-waf-logs-workshop-26</code>។</li>
@@ -619,21 +619,21 @@
 <div class="notices note" ><p>ឈ្មោះរបស់ Kinesis Data Firehose នឹងចាប់ផ្តើមជាមួយ <code>aws-waf-logs-workshop-</code>។ នេះជាតម្រូវការចាំបាច់របស់សេវាកម្ម WAF។</p>
 </div>
 
-<img src="/images/3-useawswaf/3.5-logging/logging-003.png?featherlight=false&amp;width=90pc" alt="Create Kinesis Data Firehose"></p>
+<img src="/public/images/3-useawswaf/3.5-logging/logging-003.png?featherlight=false&amp;width=90pc" alt="Create Kinesis Data Firehose"></p>
 <ol start="4">
 <li>នៅក្នុងផ្នែក <strong>Destination settings</strong>។</li>
 </ol>
 <ul>
 <li>ចុច <strong>Browse</strong>។
-<img src="/images/3-useawswaf/3.5-logging/logging-004.png?featherlight=false&amp;width=90pc" alt="Create Kinesis Data Firehose"></li>
+<img src="/public/images/3-useawswaf/3.5-logging/logging-004.png?featherlight=false&amp;width=90pc" alt="Create Kinesis Data Firehose"></li>
 <li>ជ្រើសរើស <strong>aws-waf-logs-001</strong>(S3 bucket ដែលបានបង្កើតពីមុន) ជាកន្លែងទុកដាក់គោលដៅ។</li>
 <li>ចុច <strong>Choose</strong>។
-<img src="/images/3-useawswaf/3.5-logging/logging-005.png?featherlight=false&amp;width=90pc" alt="Create Kinesis Data Firehose"></li>
+<img src="/public/images/3-useawswaf/3.5-logging/logging-005.png?featherlight=false&amp;width=90pc" alt="Create Kinesis Data Firehose"></li>
 </ul>
 <ol start="5">
 <li>
 <p>អូសអេក្រង់ចុះក្រោម ចុច <strong>Create delivery stream</strong>។
-<img src="/images/3-useawswaf/3.5-logging/logging-006.png?featherlight=false&amp;width=90pc" alt="Create Kinesis Data Firehose"></p>
+<img src="/public/images/3-useawswaf/3.5-logging/logging-006.png?featherlight=false&amp;width=90pc" alt="Create Kinesis Data Firehose"></p>
 </li>
 <li>
 <p>ចូលទៅកាន់ <a href="https://console.aws.amazon.com/wafv2/homev2/start">AWS WAF Console</a>។</p>
@@ -643,7 +643,7 @@
 <li>ចុច <strong>Web ACLs</strong>។</li>
 <li>ជ្រើសរើស <strong>Global</strong>។</li>
 <li>ចុច <strong>waf-workshop-juice-shop</strong>។
-<img src="/images/3-useawswaf/3.5-logging/logging-007.png?featherlight=false&amp;width=90pc" alt="Use Kinesis"></li>
+<img src="/public/images/3-useawswaf/3.5-logging/logging-007.png?featherlight=false&amp;width=90pc" alt="Use Kinesis"></li>
 </ul>
 <ol start="7">
 <li>នៅទំព័រព័ត៌មាន <strong>Web ACL</strong> របស់អ្នក។</li>
@@ -651,7 +651,7 @@
 <ul>
 <li>ជ្រើសរើសថេប <strong>Logging and metrics</strong>។</li>
 <li>ចុច <strong>Enable</strong>។
-<img src="/images/3-useawswaf/3.5-logging/logging-008.png?featherlight=false&amp;width=90pc" alt="Use Kinesis"></li>
+<img src="/public/images/3-useawswaf/3.5-logging/logging-008.png?featherlight=false&amp;width=90pc" alt="Use Kinesis"></li>
 </ul>
 <ol start="8">
 <li>នៅក្នុងផ្នែក <strong>Logging destination</strong>។</li>
@@ -659,7 +659,7 @@
 <ul>
 <li>ចុច <strong>Kinesis Data Firehose stream</strong>។</li>
 <li>នៅមុខ <strong>Amazon Kinesis Data Firehose delivery stream</strong> ជ្រើសរើស <strong>aws-waf-logs-workshop-26</strong>។
-<img src="/images/3-useawswaf/3.5-logging/logging-009.png?featherlight=false&amp;width=90pc" alt="Use Kinesis"></li>
+<img src="/public/images/3-useawswaf/3.5-logging/logging-009.png?featherlight=false&amp;width=90pc" alt="Use Kinesis"></li>
 </ul>
 <ol start="9">
 <li>នៅក្នុងផ្នែក <strong>Redacted fields</strong>។</li>
@@ -669,7 +669,7 @@
 <li>នៅមុខ <strong>Redacted headers</strong> ចុច <strong>Add header</strong>។</li>
 <li>បន្ថែមតម្លៃ header <code>Cookie</code>។</li>
 <li>ចុច <strong>Save</strong>។
-<img src="/images/3-useawswaf/3.5-logging/logging-010.png?featherlight=false&amp;width=90pc" alt="Use Kinesis"></li>
+<img src="/public/images/3-useawswaf/3.5-logging/logging-010.png?featherlight=false&amp;width=90pc" alt="Use Kinesis"></li>
 </ul>
 <ol start="10">
 <li>រត់ពាក្យបញ្ជា</li>
@@ -677,16 +677,16 @@
 <pre tabindex="0"><code>curl &#34;&lt;Your Juice Shop URL&gt;?username=admin&#34;
 curl &#34;&lt;Your Juice Shop URL&gt;?milkshake=banana&amp;favourite-topping=sauce&#34;
 curl -H &#34;x-milkshake: chocolate&#34; &#34;&lt;Your Juice Shop URL&gt;&#34;
-</code></pre><p><img src="/images/3-useawswaf/3.5-logging/logging-011.png?width=60pc" alt="Use Kinesis">
-<img src="/images/3-useawswaf/3.5-logging/logging-012.png?width=60pc" alt="Use Kinesis"></p>
+</code></pre><p><img src="/public/images/3-useawswaf/3.5-logging/logging-011.png?width=60pc" alt="Use Kinesis">
+<img src="/public/images/3-useawswaf/3.5-logging/logging-012.png?width=60pc" alt="Use Kinesis"></p>
 <ol start="11">
 <li>
 <p>ទាញយកឯកសារ log ដែលបានកត់ត្រាពី S3។
-<img src="/images/3-useawswaf/3.5-logging/logging-013.png?featherlight=false&amp;width=90pc" alt="Use Kinesis"></p>
+<img src="/public/images/3-useawswaf/3.5-logging/logging-013.png?featherlight=false&amp;width=90pc" alt="Use Kinesis"></p>
 </li>
 <li>
 <p>ស្វែងរកពាក្យគន្លឹះ Cookie ក្នុងឯកសារ។
-<img src="/images/3-useawswaf/3.5-logging/logging-014.png?width=50pc" alt="Use Kinesis"></p>
+<img src="/public/images/3-useawswaf/3.5-logging/logging-014.png?width=50pc" alt="Use Kinesis"></p>
 </li>
 </ol>
 <h4 id="សចកតសននដឋន">សេចក្តីសន្និដ្ឋាន</h4>

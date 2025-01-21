@@ -25,7 +25,7 @@ Rule នេះនឹងទប់ស្កាត់សំណើទាំងអស
 * ចុច **Rules**។
 * ចុច **Add Rules**។
 * ចុច **Add my own rules and rule groups**។
-![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-001.png?featherlight=false&width=90pc)
+![Create Custom Rule](/public/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-001.png?featherlight=false&width=90pc)
 
 2. នៅក្នុងផ្នែក **Rule builder**។
 * ចុច **Rule JSON editor**។
@@ -84,13 +84,13 @@ Rule នេះនឹងទប់ស្កាត់សំណើទាំងអស
   }
 }
 ```
-![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-002.png?featherlight=false&width=90pc)
+![Create Custom Rule](/public/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-002.png?featherlight=false&width=90pc)
 
 3. អូសអេក្រង់ចុះក្រោម ចុច **Add rule**។
-![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-003.png?featherlight=false&width=90pc)
+![Create Custom Rule](/public/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-003.png?featherlight=false&width=90pc)
 
 4. ចុច **Save**។
-![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-004.png?featherlight=false&width=90pc)
+![Create Custom Rule](/public/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-004.png?featherlight=false&width=90pc)
 
 #### ធ្វើបច្ចុប្បន្នភាព Rule
 Rule នេះនឹងទប់ស្កាត់សំណើទាំងអស់ដែលបំពេញលក្ខខណ្ឌទាំងពីរ៖
@@ -100,10 +100,10 @@ Rule នេះនឹងទប់ស្កាត់សំណើទាំងអស
 1. នៅទំព័រព័ត៌មាន **Web ACL** របស់អ្នក។
 * ចុច **Rules**។
 * ចុច **complex-rule-challenge** (ឈ្មោះ rule ដែលត្រូវធ្វើបច្ចុប្បន្នភាព)។
-![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-005.png?featherlight=false&width=90pc)
+![Create Custom Rule](/public/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-005.png?featherlight=false&width=90pc)
 
 2. ចុច **Edit**។
-![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-006.png?featherlight=false&width=90pc)
+![Create Custom Rule](/public/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-006.png?featherlight=false&width=90pc)
 
 3. នៅក្នុងផ្នែក **Rule builder**។
 * ចុច **Rule JSON editor**។
@@ -208,13 +208,13 @@ Rule នេះនឹងទប់ស្កាត់សំណើទាំងអស
   }
 }
 ```
-![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-007.png?featherlight=false&width=90pc)
+![Create Custom Rule](/public/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-007.png?featherlight=false&width=90pc)
 
 4. ចុច **Save rule**។
-![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-008.png?featherlight=false&width=90pc)
+![Create Custom Rule](/public/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-008.png?featherlight=false&width=90pc)
 
 5. ចុច **Save**។
-![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-009.png?featherlight=false&width=90pc)
+![Create Custom Rule](/public/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-009.png?featherlight=false&width=90pc)
 
 6. រត់ពាក្យបញ្ជា
 ```
@@ -222,8 +222,8 @@ Rule នេះនឹងទប់ស្កាត់សំណើទាំងអស
 curl -H "x-milkshake: chocolate" "<Your Juice Shop URL>"
 curl  "<Your Juice Shop URL>?milkshake=banana"
 ```
-![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-010.png?width=60pc)
-![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-011.png?width=60pc)
+![Create Custom Rule](/public/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-010.png?width=60pc)
+![Create Custom Rule](/public/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-011.png?width=60pc)
 
 7. រត់ពាក្យបញ្ជា
 ```
@@ -231,8 +231,8 @@ curl  "<Your Juice Shop URL>?milkshake=banana"
 curl -H "x-milkshake: chocolate" -H "x-favourite-topping: nuts" "<Your Juice Shop URL>"
 curl  "<Your Juice Shop URL>?milkshake=banana&favourite-topping=sauce"
 ```
-![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-012.png?width=60pc)
-![Create Custom Rule](/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-013.png?width=60pc)
+![Create Custom Rule](/public/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-012.png?width=60pc)
+![Create Custom Rule](/public/images/3-useawswaf/3.3-createadvancecustomrule/createadvancecustomrule-013.png?width=60pc)
 
 សំណើដែលត្រូវបានទប់ស្កាត់នឹងមានការឆ្លើយតបដូចខាងក្រោម៖
 ```

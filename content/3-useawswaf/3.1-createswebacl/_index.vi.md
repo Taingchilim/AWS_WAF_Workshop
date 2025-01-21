@@ -26,49 +26,49 @@ pre = "<b>3.1. </b>"
 ការអនុវត្តនេះប្រើកំណែថ្មីបំផុតនៃ AWS WAF។ សូមប្រាកដថាអ្នកមិនប្រើ WAF Classic ទេ។
 {{% /notice %}}
 * ចុច **Create web ACL**។
-![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-001.png?featherlight=false&width=90pc)
+![Create Web ACL](/public/images/3-useawswaf/3.1-createwebacl/createwebacl-001.png?featherlight=false&width=90pc)
 2. ក្នុងផ្នែក **Web ACL details**។
 * នៅផ្នែក **Resource type** ចុច **CloudFront distributions**។
 * នៅផ្នែក **Name** វាយ ```waf-workshop-juice-shop```។
 * នៅផ្នែក **Description** វាយ ```Web ACL for the aws-waf-workshop```។
-![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-002.png?featherlight=false&width=90pc)
+![Create Web ACL](/public/images/3-useawswaf/3.1-createwebacl/createwebacl-002.png?featherlight=false&width=90pc)
 3. ក្នុងផ្នែក **Associated AWS resources** ចុច **Add AWS resources**។
-![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-003.png?featherlight=false&width=90pc)
+![Create Web ACL](/public/images/3-useawswaf/3.1-createwebacl/createwebacl-003.png?featherlight=false&width=90pc)
 4. ក្នុងផ្នែក **Add AWS resources** ចុច **E24BURECS1O10C - dkievcmqb5kzc.cloudfront.net - WAF Workshop CloudFront Distribution** (CloudFront distribution ដែលយើងបានបង្កើត)។
 * ចុច **Add**។
-![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-004.png?featherlight=false&width=90pc)
+![Create Web ACL](/public/images/3-useawswaf/3.1-createwebacl/createwebacl-004.png?featherlight=false&width=90pc)
 5. ចុច **Next**។
-![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-005.png?featherlight=false&width=90pc)
+![Create Web ACL](/public/images/3-useawswaf/3.1-createwebacl/createwebacl-005.png?featherlight=false&width=90pc)
 6. ក្នុងផ្នែក **Rules**។
 * ចុច **Add rules**។
 * ចុច **Add managed rule groups**។
-![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-006.png?featherlight=false&width=90pc)
+![Create Web ACL](/public/images/3-useawswaf/3.1-createwebacl/createwebacl-006.png?featherlight=false&width=90pc)
 7. នៅទំព័រ **Add managed rule groups** ចុច **AWS managed rule groups**។
-![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-007.png?featherlight=false&width=90pc)
+![Create Web ACL](/public/images/3-useawswaf/3.1-createwebacl/createwebacl-007.png?featherlight=false&width=90pc)
 8. ជ្រើសរើស **Core Rule Set** និង **SQL Database**។
-![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-008.png?featherlight=false&width=90pc)
+![Create Web ACL](/public/images/3-useawswaf/3.1-createwebacl/createwebacl-008.png?featherlight=false&width=90pc)
 9. រុញអេក្រង់ចុះក្រោម ចុច **Add rules**។
-![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-009.png?featherlight=false&width=90pc)
+![Create Web ACL](/public/images/3-useawswaf/3.1-createwebacl/createwebacl-009.png?featherlight=false&width=90pc)
 10. នៅទំព័រ **Add managed rule groups** ចុច **Next**។
-![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-010.png?featherlight=false&width=90pc)
+![Create Web ACL](/public/images/3-useawswaf/3.1-createwebacl/createwebacl-010.png?featherlight=false&width=90pc)
 11. នៅទំព័រ **Set rule priority** ចុច **Next**។
-![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-011.png?featherlight=false&width=90pc)
+![Create Web ACL](/public/images/3-useawswaf/3.1-createwebacl/createwebacl-011.png?featherlight=false&width=90pc)
 12. នៅទំព័រ **Configure metrics** ចុច **Next**។
-![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-012.png?featherlight=false&width=90pc)
+![Create Web ACL](/public/images/3-useawswaf/3.1-createwebacl/createwebacl-012.png?featherlight=false&width=90pc)
 13. នៅទំព័រ **Review and create web ACL** រុញអេក្រង់ចុះក្រោម ចុច **Create web ACL**។
-![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-013.png?featherlight=false&width=90pc)
-![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-014.png?featherlight=false&width=90pc)
+![Create Web ACL](/public/images/3-useawswaf/3.1-createwebacl/createwebacl-013.png?featherlight=false&width=90pc)
+![Create Web ACL](/public/images/3-useawswaf/3.1-createwebacl/createwebacl-014.png?featherlight=false&width=90pc)
 14. រត់ពាក្យបញ្ជា
 ```
 # វាក្លែងធ្វើជាការវាយប្រហារ Cross Site Scripting
 # សំណើនេះគួរតែត្រូវបានរារាំង។
 curl -X POST  <Your Juice Shop URL> -F "user='<script><alert>Hello></alert></script>'"
 ```
-![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-015.png?width=60pc)
+![Create Web ACL](/public/images/3-useawswaf/3.1-createwebacl/createwebacl-015.png?width=60pc)
 15. រត់ពាក្យបញ្ជា
 ```
 # វាក្លែងធ្វើជាការវាយប្រហារ SQL Injection
 # សំណើនេះគួរតែត្រូវបានរារាំង។
 curl -X POST <Your Juice Shop URL> -F "user='AND 1=1;"
 ```
-![Create Web ACL](/images/3-useawswaf/3.1-createwebacl/createwebacl-016.png?width=60pc)
+![Create Web ACL](/public/images/3-useawswaf/3.1-createwebacl/createwebacl-016.png?width=60pc)
