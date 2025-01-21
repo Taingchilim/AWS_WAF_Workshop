@@ -12,4 +12,4 @@ pre = "<b>1. </b>"
 
 Using a WAF is a great way to add defense in depth to your web application. A WAF can help mitigate the risk of vulnerabilities such as [SQL Injection](https://owasp.org/www-community/attacks/SQL_Injection), [Cross Site Scripting](https://owasp.org/www-community/attacks/xss/) and other common attacks (which listed in Top 10 OWASP). WAF allows you to create your own custom rules to decide whether to block or allow HTTP requests before they reach your application.
 
-{{< figure src="/images/waficon.png" title="AWS WAF" width=140pc >}}
+{{< figure src="/public/images/waficon.png" title="AWS WAF" width=140pc >}}
